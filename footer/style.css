@@ -1,0 +1,58 @@
+html,body{
+    margin:0;
+	padding:0;
+    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
+    height:100%;
+    font-size: 75%;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;/*清除下划线*/
+}
+.footer1 {
+    background-color: #f9f9f9;
+}
+/*解决高度坍塌*/
+.footer1 ::after{
+    content:"";/*空的文本*/
+    display: block;/*转为块级元素*/
+    clear: both;/*清除左右浮动*/
+}
+.footer1 .inner_wrap {
+    width: 1225px;
+    margin: 0 auto;
+}
+.footer1 .inner_wrap .helper-item {
+    float: left;
+    width: 160px;
+}
+dd {
+    margin-left: 0px;
+}
+.content-list .content-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.content-list .content-title a {
+    color: #333;
+}
+.content-list .node-index {
+    line-height: 24px;
+}
+.content-list .node-index a {
+    color: #555;
+} 
+.footer2 {
+    background-color: #FFF;
+}
+.footer2 .inner_wrap2 {
+    padding: 10px 0;
+    color: #cccccc;
+    line-height: 24px;/*设置垂直方向居中*/
+    width: 1225px;
+    margin: 0 auto;
+} 
+.footer2 .inner_wrap2 a{
+    color: #333;
+}

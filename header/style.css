@@ -1,0 +1,188 @@
+html,body{
+	margin:0;
+	padding:0;
+    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
+    /* height:100%;
+    font-size: 75%;
+    line-height: 1.5; */
+}
+.header .header_top_bar {
+    display: flex;/* 弹性布局*/
+    background-color: #333;
+    width: 100%;
+    flex-wrap: nowrap;/*页面不够显示，不换行*/
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.container .header_left {
+    float: left;/*左浮动*/
+}
+/* 解决高度坍塌 */
+.container::after {
+    content:"";/*空的文本*/
+    display: block; /*转为块级元素*/
+    clear: both;/*清除清除左右浮动*/
+}
+ul{
+    padding: 0;
+    list-style: none;/*清除ul标签前面的实心圆点*/
+}
+.header_left ul li {
+    font-size: 15px;
+    color: #ccc;
+}
+.container .header_right{
+    float: right;/*右浮动*/
+    margin-right: 100px;
+}
+a {
+    text-decoration: none;/* 清除a标签下划线 */
+    color: #666;
+}
+/* 登录注册文字中间竖线样式 */
+.container .header_right span{
+    font-size: 15px;
+    color: #999;
+    padding:  0 5px;
+}
+.container .header_right a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;/*设置文字间距*/
+    margin: 16px 5px;
+}
+.container .header_right a:hover {
+    color: #ff6700;
+}
+.header_moddle {
+    padding: 3rem 0;/*rem相对html字体大小倍数*/
+    display: flex;/* 弹性布局*/
+    width: 100%;
+    flex-wrap: nowrap;/*页面不够显示，不换行*/
+}
+.header_moddle .logo {
+    float: left;
+}
+/* logo图片样式 */
+.header_moddle .logo img {
+    height: 60px;
+    margin-top: 10px;
+}
+.header_moddle .search {
+    width: 50%;
+    float: left;
+    position: relative;/*父元素相对定位*/
+    margin: 10px 0 0 35px;
+}
+/* input输入框样式 */
+.header .search input {
+    width: 80%;
+    padding: 8px 15px;
+    font-size: 16px;
+    outline: none;  
+    box-sizing: border-box;/*盒模型，盒子宽高不受内部影响*/
+}
+/* 搜索框样式 */
+.header .search .search {
+    border: none;/*清除边框*/
+    position: absolute;/*相对父元素绝对定位*/
+    top: -10px;
+    right: 13px;
+    width: 70px;
+    height: 37px;
+    outline: none;/*清除外边框*/
+    background: #23a822;
+    border-radius: 2px;/*边框圆角2像素*/
+    color: #fff;
+    text-align: center;
+    line-height: 37px;/*设置垂直方向居中*/
+}
+/* 搜索框鼠标悬停效果 */
+.header .search .search:hover {
+    background: rgb(79, 248, 1);
+    color: #666;
+    cursor: pointer;/*鼠标样式：小手*/
+}
+.header_moddle .search .hots {
+    line-height: 20px;
+    color: #000;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.header_moddle .search .hots a {
+    color: #666666;
+}
+.header_moddle .search .hots a:hover {
+    color: #ff6700;
+}
+.header_moddle  .cart {
+    float: right;
+}
+.header .cart a.shop {
+    background: #ee4f4f;
+    padding: 0.9rem 1rem;
+    border-radius: 4px;/*边框圆角4像素*/
+    font-size: 14px;
+    font-weight: 600; /*字体加粗*/
+    color: #fff;
+    letter-spacing: 1px;/*文字间距*/
+    margin-right: 100px;
+    float: right;
+}
+.navbar {
+    display: flex;/*弹性布局*/
+    background-color: #333;
+    min-height: 70px;
+}
+.collapse {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;/*文本水平轴方向对齐 两边有空白*/
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
+}
+.navbar .collapse li a {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.navbar .collapse li a:hover {
+    color: #ff6700;
+}
+.navbar .collapse li {
+    width: 14.28%;
+}
+.caret {
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid ;
+    border-right: 4px solid transparent;/*右边框透明*/
+    border-left: 4px solid transparent;/*左边框透明*/
+    border-bottom: 4px solid transparent;/*下边框透明*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

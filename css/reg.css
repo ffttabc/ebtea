@@ -1,0 +1,178 @@
+/* 主体通用设置 */
+html,body{
+	margin:0;
+	padding:0;
+    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
+    height:100%;
+    font-size: 75%;
+    line-height: 1.5;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+ul{
+    list-style: none;
+}
+.header {
+    width: 100%;
+}
+.container {
+	width: 1140px;
+	padding: 0 15px;
+    margin: 0 auto;
+}
+.container img {
+    width: 280px;
+    margin: 30px 50px;
+}
+.section {
+    width: 100%; 
+}
+.section::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.box {
+    position: relative;
+    background: #000 url(../images/74.jpg) no-repeat 50% 100%;
+    height: 410px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.signin {
+    width: 435px;
+    margin-bottom: 10px;
+    background-color: rgb(221, 218, 218,0.2);
+    position: absolute;
+    top: 28px;
+    right: 20px;    
+}
+.sign-title {
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.sign-title h2 {
+    font: 400 24px/44px 'Microsoft Yahei';
+    color: #fff;
+}
+.signin .list-item ,.list-item-label{
+    height: 40px;
+    font-size: 17px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #fff;
+    /* border-bottom: 1px solid #ccc; */
+}
+.signin div:nth-child(2) span{
+    margin-right:19px;
+}
+.signin div:nth-child(3) span{
+    margin-right:37px;
+}
+.signin span{
+    color:#f00;
+}
+.list-item-label span{
+    margin-right:18px;
+}
+input {
+    vertical-align: middle;
+    font-size: 100%;
+    font-family: inherit;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 1px;
+    line-height: 21px;
+    border: 1px solid #ccc;
+    background: 0 0;
+    outline-color:#fff;
+}  
+.list-item .check{
+    margin-right: 10px;
+}
+.list-item-label input{
+    width: 90px;
+    border: 1px solid #fff;
+    margin-right:10px;
+}
+.list-item-label a{
+    color: rgb(80, 80, 241);
+    font-size: 14px;
+}
+#discode{
+    background: #ddd;
+    margin:0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #fff;
+    font-size: 16px;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #fff;
+    font-size: 16px;
+  }
+a:hover {
+    color:rgb(223, 215, 215);
+    background-color:#c75407;
+}
+input[type="text"]{
+    color: #3cff1b;
+    font-size: 16px;
+}
+.reg a {
+    color: #f00;
+    font-size: 16px;
+}
+.botton a{
+    display:inline-block;
+    margin-left: 150px;
+    width:100px;
+    height: 30px;
+    background:linear-gradient(to bottom,#ff6700,#793406);
+    border:none;
+    outline:none;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
