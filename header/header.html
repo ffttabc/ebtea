@@ -4,108 +4,83 @@
 	<meta charset="UTF-8">
 	<title>茗茶网-茶具</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/login.css">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-	<header class="header">
-		<!-- 顶部登录注册 -->
-		<div class="header_top_bar">
-			<!-- 顶部居中 -->
-			<div class="container">
-				<div class="header_left">
-					<ul>
-						<li>分享优质茶具、茶叶，品味饮茶的乐趣，客服电话：400-6576-218 </li>
-					</ul>
-				</div>
-				<div class="header_right">
-					<!-- 跳转到登录页面 -->
-					<a href="../login.html" target="blank">登录</a>
-					<span>|</span>
-					<!-- 跳转到注册页面 -->
-					<a href="../reg.html" target="black">注册</a>
-				</div>
-				<div class="clearfix"> </div>
+	<div id="topbar">
+		<div class="inner-wrap2">
+			<div class="topbar-left">
+				分享优质茶具、茶叶，品味饮茶的乐趣，客服电话：400-6576-218
+				<a href="#">登录</a><span>|</span>
+				<a href="#">注册</a>
+			</div>
+			<div class="topbar-right">
+				<a href="#">会员中心</a>
+				<a href="#">微信登录</a>
+				<a href="#">帮助中心</a>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
 			</div>
 		</div>
-		<!-- 中间logo/搜索/购物车 -->
-		<div class="header_moddle">
-			<div class="container">
-				<!-- logo设置 -->
-				<div class="logo">
+	</div>
+	<div id="header">
+		<div class="inner-wrap2">
+			<div class="header-left">
+				<a href="#">
 					<img src="32.jpg" alt="">
+				</a>
+			</div>
+			<div class="header-main">
+				<div>
+					<input type="text" class="x-input" placeholder="春百花，夏有风，清茗煮沸待友来">
+					<button>
+						<span class="icon">搜索</span>
+					</button>
 				</div>
-				<!-- 搜索框及搜索按钮 -->
-				<div class="search">
-					<div>
-						<input type="text" placeholder="春百花，夏有风，清茗煮沸待友来">
-						<botton class="search ">搜索</botton>
-					</div>
-					<div class="hots">
-						<span>热门搜索：</span>
-						<a href="">铁壶</a>
-						<a href="">汝窑</a>
-						<a href="">玻璃杯</a>
-						<a href="">品茶忆友</a>
-					</div>
-				</div>
-				<!-- 购物车按钮 -->
-				<div class="cart">
-					<a class="shop" href="#">
-						<font style="vertical-align: inherit;">
-							现在去购物
-						</font>
-					</a>
+				<div class="hots">
+					<span>热门搜索：</span>
+					<a href="#">铁壶</a>
+					<a href="#">汝窑</a>
+					<a href="#">玻璃杯</a>
+					<a href="#">品茶忆友</a>
 				</div>
 			</div>
+			<div class="header-right">
+				<a href="#" target="_blank">
+					<img src="33.jpg" alt="">
+				</a>
+			</div>
 		</div>
-		<!-- 标题栏 -->
-		<nav class="navbar">
-			<!-- 标题内容 -->
-			<ul class="collapse">
-				<li>
-					<a href="">首页</a>
-				</li>
-				<li>
-					<a href="">品牌汇
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-				<li>
-					<a href="">积分兑换
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-				<li>
-					<a href="">限时优惠
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-				<li>
-					<a href="">秒杀
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-				<li>
-					<a href="">新品上线
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-				<li>
-					<a href="">铁壶之源
-						<!-- 向下箭头 -->
-						<span class="caret"></span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+	</div>
+	<div id="nav">
+		<div class="inner-wrap2">
+			<div class="nav-left">
+				<a href="#">所有商品分类</a>
+			</div>
+			<div class="nav-main">
+				<ul>
+					<li class="active"><a href="">首页</a> </li>
+					<li><a href="">会员中心</a> </li>
+					<li><a href="">品牌汇</a> </li>
+					<li><a href="">限时优惠</a> </li>
+					<li><a href="">积分兑换</a> </li>
+					<li><a href="">秒杀</a> </li>
+					<li><a href="">新品上线</a> </li>
+					<li><a href="">铁壶之源</a> </li>
+					<li><a href="">视频</a> </li>
+				</ul>
+			</div>
+			<div class="nav-right minicart">
+				<a href="#" class="minicart-text">
+					<i class="icon"></i>
+					 购物车中有
+					 <b>0</b>
+					  件商品  
+				</a>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

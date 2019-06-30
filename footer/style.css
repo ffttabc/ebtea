@@ -1,33 +1,76 @@
 html,body{
-    margin:0;
+	margin:0;
 	padding:0;
     font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
     height:100%;
     font-size: 75%;
     line-height: 1.5;
 }
-a{
-    text-decoration: none;/*清除下划线*/
+ul,li {
+	margin: 0;
+	padding: 0;
+    display: block;
+}
+h3 {
+    margin: 0;
+    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
+}
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+div,dl{
+	display: block;
+}
+dd {
+    margin-inline-start: 0px;
+}
+.col-md-3, .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+.container {
+	width: 1140px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container::before , .container::after , .clearfix::before , .clearfix::after {
+    content: '';
+    display: table;
+}
+.container::after , .clearfix::after  {
+    clear: both;
 }
 .footer1 {
     background-color: #f9f9f9;
-}
-/*解决高度坍塌*/
-.footer1 ::after{
-    content:"";/*空的文本*/
-    display: block;/*转为块级元素*/
-    clear: both;/*清除左右浮动*/
+    width: 100%;
+    height: 195px;
+    position:  relative;
 }
 .footer1 .inner_wrap {
     width: 1225px;
     margin: 0 auto;
 }
+.inner_wrap {
+    padding: 20px 0;
+    height: auto;
+}
 .footer1 .inner_wrap .helper-item {
     float: left;
     width: 160px;
 }
-dd {
-    margin-left: 0px;
+.footer1 .inner_wrap .helper-item a img {
+    border: 0 none;
+}
+.footer1 .inner_wrap .helper-item  .content-list {
+    margin: 0;
 }
 .content-list .content-title {
     font-size: 14px;
@@ -39,6 +82,11 @@ dd {
 }
 .content-list .node-index {
     line-height: 24px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
 }
 .content-list .node-index a {
     color: #555;
@@ -47,12 +95,10 @@ dd {
     background-color: #FFF;
 }
 .footer2 .inner_wrap2 {
+    text-align: center;
     padding: 10px 0;
     color: #cccccc;
-    line-height: 24px;/*设置垂直方向居中*/
+    line-height: 24px;
     width: 1225px;
     margin: 0 auto;
-} 
-.footer2 .inner_wrap2 a{
-    color: #333;
 }
