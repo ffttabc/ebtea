@@ -124,14 +124,14 @@ ul{
 .nav-right{
     float:right;
 }
-#nav .nav-left{
+#nav .nav-left .nav-hand{
     width: 160px;
     line-height: 40px;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
 }
-#nav .nav-left a{
+#nav .nav-left .nav-hand a{
     color: white;
     display: block;
     background-color: #46ba11;
@@ -184,5 +184,41 @@ ul{
     background-color: #46ba11;
     color: #FFF;
 }
-
-
+.nav-content{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 47px;
+    position: absolute;
+    width: 160px;
+    z-index: 99;
+}
+.nav-content .nav-content-item{
+    position: relative;
+    font-size: 14px;
+}
+.nav-content .nav-content-item a{
+    padding-left: 20px;
+    padding-right: 10px;
+    display: block;
+    color: #666666;
+    overflow: hidden;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.nav-content .nav-content-item a .text{
+    width: 123px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    font-size:14px;
+}
+.nav-content .nav-content-item a .icon{
+    color: #aaaaaa;
+    width: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+}
