@@ -12,11 +12,13 @@
 	<div class="section-banner">
 		<div class=banner-wrap>
 			<div id="main-slide">
-				<img src="images/slide1.jpg" alt="">
-				<img src="images/slide2.jpg" alt="">
-				<img src="images/silde3.jpg" alt="">
-				<img src="images/slide4.jpg" alt="">
-				<ul class="index">
+				<div id="imgslist">
+					<a href="#"><img src="images/slide1.jpg" alt=""></a>
+					<a href="#"><img src="images/silde3.jpg" alt=""></a>
+					<a href="#"><img src="images/slide4.jpg" alt=""></a>
+					<a href="#"><img src="images/slide2.jpg" alt=""></a>
+				</div>
+				<ul id="index">
 					<li>1</li>
 					<li>2</li>
 					<li>3</li>
@@ -24,37 +26,93 @@
 				</ul>
 			</div>
 			<script type="text/javascript">
-				window.onload = function () {
-					//取父元素节点
-					var mainSlide = document.getElementById("main-slide")
-					//获取图片数组
-					var imgs = document.getElementById("main-slide").getElementsByTagName('img');
-					//获取索引数组
-					var indexs = document.getElementsByClassName("index")[0].children;
-					var imgIndex = 0;  //图片下标
-					var timer = setInterval(autoPlay, 3000);
-					function autoPlay() {
-						//隐藏当前图片
-						imgs[imgIndex].style.display = "none";
-						//修改索引颜色
-						indexs[imgIndex].style.backgroundColor = "transparent";
-						imgIndex++;
-						if (imgIndex == imgs.length) {
-							imgIndex = 0;
-						}
-						//显示下一张图片
-						imgs[imgIndex].style.display = "block";
-						//显示对应索引
-						indexs[imgIndex].style.backgroundColor = "#1a8717";
+				//图片下标变量
+				var m = 1;
+				//定时器
+				var timer = setInterval(run, 1000);
+				//获取图片和指示器
+				var imgs = document.getElementById("imgslist").getElementsByTagName("a");
+				var icon = document.getElementById("index").getElementsByTagName("li");
+				var div = document.getElementById("main-slide");
+				//循环函数
+				function run() {
+					if (m >= 4) {
+						m = 0;
 					}
-					//鼠标移入停止定时器
-					mainSlide.onmouseover = function () {
-						clearInterval(timer);
-					}
-					mainSlide.onmouseout = function () {
-						timer = setInterval(autoPlay, 3000);
-					}
+					//图片函数调用m值
+					controlimg(m);
+					controlicon(m);
+					m++;
 				}
+
+
+				//图片循环函数
+				function controlimg(n) {
+					for (var i = 0; i < imgs.length; i++) {
+						imgs[i].style.display = "none";
+					}
+					imgs[n].style.display = "block";
+				}
+
+				function controlicon(n) {
+					for (var i = 0; i < icon.length; i++) {
+						icon[i].style.backgroundColor = "transparent";
+					}
+					icon[n].style.backgroundColor = "#1a8717";
+				}
+				//鼠标悬停
+				div.onmouseover = function () {
+					clearInterval(timer);
+				}
+				div.onmouseout = function () {
+					timer = setInterval(run, 1000);
+				}
+				//给图标绑定事件
+				for (var i = 0; i < icon.length; i++) {
+					(function(i){
+						icon[i].onmouseover=function(){
+						controlimg(i);
+						controlicon(i);
+						m=m+1;
+						}
+					})(i);
+				}
+
+
+
+
+
+				// window.onload = function () {
+				// 	//取父元素节点
+				// 	var mainSlide = document.getElementById("main-slide")
+				// 	//获取图片数组
+				// 	var imgs = document.getElementById("main-slide").getElementsByTagName('img');
+				// 	//获取索引数组
+				// 	var indexs = document.getElementsByClassName("index")[0].children;
+				// 	var imgIndex = 0;  //图片下标
+				// 	var timer = setInterval(autoPlay, 3000);
+				// 	function autoPlay() {
+				// 		//隐藏当前图片
+				// 		imgs[imgIndex].style.display = "none";
+				// 		//修改索引颜色
+				// 		indexs[imgIndex].style.backgroundColor = "transparent";
+				// 		imgIndex++;
+				// 		if (imgIndex == imgs.length) {
+				// 			imgIndex = 0;
+				// 		}
+				// 		//显示下一张图片
+				// 		imgs[imgIndex].style.display = "block";
+				// 		//显示对应索引
+				// 		indexs[imgIndex].style.backgroundColor = "#1a8717";
+				// 	}
+				// 	//鼠标移入停止定时器
+				// 	mainSlide.onmouseover = function () {
+				// 		clearInterval(timer);
+				// 	}
+				// 	mainSlide.onmouseout = function () {
+				// 		timer = setInterval(autoPlay, 3000);
+				// 	}
+				// }
 			</script>
 		</div>
 	</div>

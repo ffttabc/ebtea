@@ -51,18 +51,20 @@ i{
 }
 #main-slide img{
     width:100%;
-    display:none;
 }
-#main-slide img:first-child{
-    display: block;
-}
-#main-slide ul{
+#index{
     position: absolute;
     bottom: 20px;
-    right:2%;
-    margin-left: -45px;
+    right:20px;;
+    /* margin-left: -45px;
+    width:140px;
+    height:25px; */
 }
-.index li {
+/* #imgslist a{
+    display: none;
+} */
+#index li {
+    line-height: 25px;
     color:#fff;
     float: left;
     height: 25px;
@@ -72,9 +74,8 @@ i{
     text-align: center;
     border-radius:50%; 
     list-style: none;
-}
-.index li:first-child{
-    background: #1a8717;    
+    cursor: pointer;
+    background-color : transparent;
 }
 .main_item{
     width: 1224px;
