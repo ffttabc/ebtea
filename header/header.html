@@ -5,6 +5,9 @@
 	<title>茗茶网-茶具</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico">
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -55,11 +58,11 @@
 	</div>
 	<div id="nav">
 		<div class="inner-wrap2">
-			<div class="nav-left">
-				<div class="nav-hand">
+			<div class="nav-left"> 
+				<div class="nav-hand" id="nav_hand">
 					<a href="#">所有商品分类</a>
 				</div>
-				<div class="nav-content">
+				<div class="nav-content" id="nav_box">
 					<ul class="nav-content-list">
 						<li class="nav-content-item">
 							<a href="#">
@@ -105,6 +108,17 @@
 						</li>
 					</ul>
 				</div>
+				<script>
+					"use strict"
+					var contents =document.getElementById("nav_box");
+					var navhand =document.getElementById("nav_hand");
+					navhand.onmouseenter=function(){
+						contents.style.display="block"
+					}
+					navhand.onmouseleave=function(){
+						contents.style.display="none"
+					}
+				</script>
 			</div>
 			<div class="nav-main">
 				<ul>
@@ -122,9 +136,9 @@
 			<div class="nav-right minicart">
 				<a href="#" class="minicart-text">
 					<i class="icon"></i>
-					 购物车中有
-					 <b>0</b>
-					  件商品  
+					购物车中有
+					<b>0</b>
+					件商品
 				</a>
 			</div>
 		</div>

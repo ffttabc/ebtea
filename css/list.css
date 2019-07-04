@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+body {
+    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+ul, ol, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+i {
+    font-style: normal;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container .ebtea_main{
+    width: 1226px;
+    margin: 0 auto;
+}
+.ebtea_left{
+    width: 160px;
+    float: left;
+    overflow: hidden;
+    padding-top: 335px;
+}
+.e_history{
+    width: 158px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.inner_warp{
+    width: 1046px;
+    float: right;
+}
+.banner img{
+    display:block;
+}
+.bread-crumbs {
+    margin: 10px 0;
+    line-height: 2;
+}
+.product-container{
+    width: 100%;
+    table-layout: fixed;
+}
+.product-side{
+    float:left;
+    width:402px;
+}
+.product-side .product-album .top{
+    border: 1px solid #ddd;
+}
+.product-side .product-album .top img{
+    vertical-align: middle;
+    height: 400px;
+}
+
+
+
+
+
+
+.product-side .product-album .bottom {
+    margin-top: 10px;
+    height:69px;
+    width: 100%;
+    position: relative;
+    clear: left;
+}
+.product-side .product-album .bottom .left{
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    width: 16px;
+    background-color: #eee;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+.product-side .product-album .bottom .left a{
+    display:block;
+    border-right:5px solid #ccc;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    top:25px;
+    right:5px;
+}
+.bottom .thumbnail-list {
+    overflow: hidden;
+    width: 368px;
+    height: 64px;
+    position: relative;
+    top:5px;
+}
+.product-side .product-album .bottom ul{
+    width:360px;
+    height:69px;
+    position: absolute;
+    top:0;
+    left:16px;
+}
+.product-side .product-album .bottom ul li{
+    padding: 1px;
+    margin: 0 4px;
+    float: left;
+}
+.product-side .product-album .bottom .thumbnail{
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial;
+}
+.thumbnail-list .active .thumbnail {
+    border: 2px solid #f60;
+}
+.product-side .product-album .bottom .thumbnail img{
+    max-width: 60px;
+    max-height: 60px;
+    vertical-align: middle;
+}
+.product-side .product-album .bottom .right{
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-top: 5px;
+    width: 16px;
+    background-color: #eee;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+.product-side .product-album .bottom .right a{
+    display:block;
+    border-left:5px solid #ccc;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    top:25px;
+    left:5px;
+}
+.share-recommend {
+    clear: both;
+    text-align: center;
+    margin-top: 15px;
+}
+.share-recommend button{
+    background-image: linear-gradient(#fefefe,#e8e8e8);
+    padding:0 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding-left: 10px;
+    height: 100%;
+    width:78px;
+    line-height: 1.91667;
+    font-size: inherit;
+}
+.share-recommend .btn{
+    margin-left:6px;
+    margin-right:11px;
+}
+.share-recommend .bt{
+    width:66px;
+    margin-left:6px;
+    margin-right:11px;
+}
+.product-main{
+    margin-left:420px ;
+}
+.product-titles {
+    padding-bottom: 10px;
+    line-height: 1.8;
+    text-align: left;
+}
+.product-titles h2 {
+    font-size: 1.5em;
+}
+.product-titles p {
+    color: #fe2000;
+}
+.product-information .label {
+    float: left;
+    width: 6em;
+}
+.product-information .detail {
+    display: block;
+    margin-left: 5em;
+    height: 24px;
+}
+.product-information {
+    line-height: 2;
+    float: left;
+    width: 100%;
+    border-bottom:1px dotted #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.product-information .action-price{
+    font-size: 166.66667%;
+    line-height: 1.2;
+    color:#f00;
+}
+.product-information .minor{
+    color:#888;
+}
