@@ -18,40 +18,42 @@ a {
 ul{
     list-style: none;
 }
+input{
+    font-family: inherit;
+}
 .header {
     width: 100%;
 }
 .container {
-	width: 1140px;
-	padding: 0 15px;
+	width: 1000px;
     margin: 0 auto;
 }
 .container img {
     width: 280px;
-    margin: 30px 50px;
+    margin-top: 15px;
 }
 .section {
-    width: 100%; 
-}
-.section::after{
-    content:'';
-    display: block;
-    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 .box {
     position: relative;
-    background: #000 url(../images/74.jpg) no-repeat 50% 100%;
+    /* background: #000 url(../images/74.jpg) no-repeat 50% 100%; */
     height: 410px;
     margin-bottom: 40px;
     padding: 0;
 }
+/* 注册框 */
 .signin {
-    width: 435px;
+    width: 630px;
     margin-bottom: 10px;
-    background-color: rgb(221, 218, 218,0.2);
     position: absolute;
-    top: 28px;
-    right: 20px;    
+    top: 0px;
+    left: 0px;    
+    border:2px solid #ccc;
+    box-sizing: border-box;
 }
 .sign-title {
     height: 44px;
@@ -61,118 +63,98 @@ ul{
 }
 .sign-title h2 {
     font: 400 24px/44px 'Microsoft Yahei';
-    color: #fff;
+    color: #1566c0;
 }
-.signin .list-item ,.list-item-label{
-    height: 40px;
-    font-size: 17px;
-    overflow: hidden;
+.list-item{
+    height: 51px;
+    font-size: 116.66667%;
     margin-bottom: 10px;
-    margin-left: 30px;
-    color: #fff;
-    /* border-bottom: 1px solid #ccc; */
 }
-.signin div:nth-child(2) span{
-    margin-right:19px;
+.list-item .text{
+   display:block;
+   width:145px;
+   height:32px;
+   text-align: right;
+   font-size: 14px;
+   line-height: 32px;
+   float: left;
 }
-.signin div:nth-child(3) span{
-    margin-right:37px;
-}
-.signin span{
+.list-item .text span{
     color:#f00;
+    margin-right:-3.5px;
 }
-.list-item-label span{
-    margin-right:18px;
+.list-item  .inp{
+    display:block;
+    float:left;
+    margin-left:2px;
 }
-input {
-    vertical-align: middle;
-    font-size: 100%;
-    font-family: inherit;
-    border-width: 1px;
-    border-color: #ccc;
-    padding: 1px;
-    line-height: 21px;
-    border: 1px solid #ccc;
-    background: 0 0;
-    outline-color:#fff;
-}  
-.list-item .check{
-    margin-right: 10px;
+.list-item  .inp input{
+    width: 288px;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 4px;
+    border:1px solid #ccc;
+    padding:1px 4px;
+    letter-spacing: 1px;
 }
-.list-item-label input{
-    width: 90px;
-    border: 1px solid #fff;
-    margin-right:10px;
-}
-.list-item-label a{
-    color: rgb(80, 80, 241);
-    font-size: 14px;
+.list-item  .inp a{
+    color:#0563c3;
+    text-decoration: none;
+    font-size:14px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 #discode{
-    background: #ddd;
-    margin:0;
+    background:#ddd;
+    display:inline-block;
+    width:65px;
+    height:30px;
+    text-align: center;
+    font-size:14px;
+    line-height: 30px;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 16px;
+.list-item a{
+    color:#0563c3;
 }
-  input:-moz-placeholder, textarea:-moz-placeholder {
-    color: #fff;
-    font-size: 16px;
-  }
-  input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: #fff;
-    font-size: 16px;
-  }
-a:hover {
-    color:rgb(223, 215, 215);
-    background-color:#c75407;
+.reg .check{
+    margin-top:8px;
+    float:left;
 }
-input[type="text"]{
-    color: #3cff1b;
-    font-size: 16px;
-}
-.reg a {
-    color: #f00;
-    font-size: 16px;
+.list-item .label{
+    height:32px;
+    line-height: 32px;
+    font-size: 14px;
+    float:left;
+    margin-left:10px;
+    margin-right:15px;
 }
 .botton a{
-    display:inline-block;
-    margin-left: 150px;
-    width:100px;
-    height: 30px;
-    background:linear-gradient(to bottom,#ff6700,#793406);
-    border:none;
-    outline:none;
-    font-size: 22px;
-    font-weight: 400;
-    cursor: pointer;
+    display:block;
+    float: left;
+    width:80px;
+    height:37px;
+    line-height: 37px;
     text-align: center;
+    background-image: linear-gradient(#fc5910,#fc4f07);
+    font-size: 14px;
+    color:#fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.signup-aside{
+    margin-left:655px;
+    border-left:1px dotted #ccc;
+    padding:40px 20px 170px 25px;
+}
+.signup-aside .descrip {
+    font-size: 14px;
+    line-height: 40px;
+}
+.signup-aside a{
+    text-align: center;
+    display:block;
+    color:#fff;
+    font-size: 16px;
+    background-image: linear-gradient(#e2232c,#ca1823);
+    width:142px;
+    height:42px;
+    line-height: 42px;
+}
