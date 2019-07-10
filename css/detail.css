@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mod-bottom, .mod, .form-item, .signupin-content .form-item-normal, .signin, .signup, .sign-title, .signup-success .descrip, .related-search, .filter-container, .gallery-sortbar, .goods-item .goods-name, .brand-desc h2, .share-recommend .pop-body .notice, .product-promotion, .product-params, .detail-content, .product-tags, .product-attributes, .product-parameters, .product-saleslog, .product-score .btn-discuss, .post-comment .scores-list, .member-welcome, .member-notice, .member-welcome-tips, .member-mod, .member-address-submit, .member-tabs, .member-aftersales-record .aftersales-desc .desc .desc-title {
+    margin-bottom: 10px;
+}
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .ebtea_main {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.ebtea_left {
+    width: 160px;
+    float: left;
+    overflow: hidden;
+    padding-top: 335px;
+}
+
+.e_history {
+    width: 158px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.inner_warp {
+    width: 1046px;
+    float: right;
+}
+
+.banner img {
+    display: block;
+}
+
+.bread-crumbs {
+    margin: 10px 0;
+    line-height: 2;
+}
+.filter-container {
+    border: 1px solid #d3d3d3;
+    width:1044px;
+    height:290.828px;
+}
+.gallery-sortbar {
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+    width:1044px;
+    height:67px;
+}

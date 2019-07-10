@@ -29,7 +29,18 @@ i,
 em {
     font-style: normal;
 }
-
+input, select, textarea {
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 1px;
+}
+input, select, button, textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+input, select, button {
+    vertical-align: middle;
+}
 .mod-bottom,
 .product-comment,
 .form-item,
@@ -444,7 +455,6 @@ em {
     background-color: #fff;
     margin-bottom: -1px;
     font-weight: 700;
-    *position: relative;
 }
 
 .product-attributes {
@@ -482,7 +492,7 @@ em {
     text-align: center;
 }
 
-table {
+.detail-content table {
     border-collapse: collapse;
     border-spacing: 0;
     margin: 0 25px;
@@ -749,3 +759,197 @@ table {
 .answer-content {
     margin-top: 5px;
 }
+.product-consult {
+    line-height: 24px;
+    border:1px solid #ccc;
+}
+.consult-title {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.consult-title button{
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    
+}
+.consult-title .btn{
+    font-size: 100%;
+    font-family: inherit;
+    border: 0 none;
+    padding: 0;
+    vertical-align: middle;
+}
+.consult-title .btn span{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    height: 100%;
+    line-height: 1.91667;
+    font-size: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: linear-gradient(#fefefe,#f3f3f3)
+}
+.consult-title em {
+    margin-left: 15px;
+}
+.consult-content {
+    padding: 10px 20px;
+}
+.consult-content .tabs {
+    margin-top: 10px;
+}
+.consult-content .tabs li {
+    float: left;
+    margin-right: 5px;
+}
+.consult-content .tabs a {
+    display: block;
+    padding: 0 10px;
+}
+.consult-content .tabs li:first-child a, .consult-content .tabs a:hover {
+    background-color: #a4a4a4;
+    color: #fff;
+}
+.consult-content .no-message {
+    margin-top: 20px;
+}
+.post-comment {
+    line-height: 24px;
+    border:1px solid #ccc;
+}
+.mod-title {
+    background-color: #efefef;
+    height: 32px;
+}
+.mod-title h2 {
+    line-height: 32px;
+    font-weight: 400;
+    color: #555;
+    padding-left: 10px;
+    font-size: 116.66667%;
+}
+.post-comment .mod-content {
+    padding: 20px;
+}
+.form-item {
+    overflow: hidden;
+}
+.form-label {
+    text-align: right;
+    float: left;
+    width: 5.2rem;
+    line-height: 2.1rem;
+    min-height: 1rem;
+}
+.form-act {
+    display: block;
+    margin-left: 5.45rem;
+}
+input[type=checkbox], input[type=radio] {
+    height: 13px;
+}
+input {
+    line-height: 21px;
+    height: 21px;
+}
+.form-act label {
+    margin-left: 5px;
+    margin-right: 15px;
+    line-height: 2.1rem;
+    min-height: 1rem;   
+}
+.no-permission {
+    position: relative;
+}
+.form-act-side {
+    margin-right: 190px;
+}
+textarea {
+    border-style: solid;
+}
+.form-act textarea, .form-act-wide textarea, .form-act-side textarea {
+    -webkit-resize: vertical;
+    -moz-resize: vertical;
+    resize: vertical;
+    width: 99%;
+    display: block;
+}
+.no-permission textarea, .no-permission input {
+    background-color: #efefef;
+}
+.mini-mask {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000;
+    line-height: 11em;
+}
+.post-comment .word-count {
+    float: right;
+    color: #666;
+    font-size: 11px;
+    margin-right: 5px;
+    line-height: 25px;
+}
+input[type=text]{
+    border-style: solid;
+}
+.post-comment .sub-label {
+    color: #666;
+}
+.btn {
+    border: 0 none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    line-height: 1.91667;
+    font-size: inherit;
+}
+
+ .form-act button {
+    margin: 0;
+    cursor: pointer;
+    background-image: linear-gradient(#9c9c9c,#8e8e8e);
+    color: #ddd;
+}
+.saleslog {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.saleslog thead th {
+    border-bottom: 2px solid #ccc;
+}
+
+.saleslog th, .saleslog td {
+    height: 30px;
+    text-align: center;
+}
+.saleslog tbody tr {
+    border-bottom: 1px dotted #ccc;
+}
+.p5 {
+    padding: 5px;
+}
+/* #product_detail,#product_comment,#product_consult,#product_saleslog,#product_shfw,#product_ysbz{
+    display: none;
+}
+
+#product_detail:target ,#product_comment:target ,#product_consult:target ,#product_saleslog:target ,#product_shfw:target ,#product_ysbz:target {
+    display: block
+} */
