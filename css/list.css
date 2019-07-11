@@ -41,6 +41,13 @@ input, select, button, textarea {
 input, select, button {
     vertical-align: middle;
 }
+.tab-content  {
+    display: none;
+  }
+ #product_section .active {
+    display: block;
+    width:100%;
+  }
 .mod-bottom,
 .product-comment,
 .form-item,
@@ -361,8 +368,8 @@ input, select, button {
 
 .product-buy-quantity span input {
     width: 30px;
-    height: 20px;
-    line-height: 20px;
+    height: 19px;
+    line-height: 19px;
     padding-top: 1px;
     margin: 0;
     vertical-align: middle;
@@ -946,10 +953,11 @@ table {
 .p5 {
     padding: 5px;
 }
-/* #product_detail,#product_comment,#product_consult,#product_saleslog,#product_shfw,#product_ysbz{
-    display: none;
+#product_section{
+    position: relative;
 }
-
-#product_detail:target ,#product_comment:target ,#product_consult:target ,#product_saleslog:target ,#product_shfw:target ,#product_ysbz:target {
-    display: block
-} */
+#product_detail,#product_comment,#product_consult,#product_saleslog,#product_shfw,#product_ysbz{
+    position: absolute;
+    top:0;
+    left:0;
+}
