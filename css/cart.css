@@ -187,6 +187,9 @@ input, select, button {
     color: #666;
 }
 
+.cart-main .col-1, .cart-main .col-3, .cart-main .col-4, .cart-main .col-5, .cart-main .col-6, .cart-main .col-7, .cart-main .col-8 {
+    width: 100px;
+}
 .cart-main {
     border: 1px solid #e6e6e6;
     table-layout: fixed;
@@ -237,4 +240,215 @@ table {
 }
 .cart-main .p-info {
     text-align: left;
+}
+.cart-main .p-spec {
+    float: left;
+    padding: 0 6px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    background-color: #efefef;
+}
+.cart-main .p-quantity {
+    width: 74px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.p-quantity a{
+    background:#fff;
+    color:#8b8b8b;
+    float:left;
+    width:21px;
+    height:21px;
+    line-height: 21px;
+}
+.p-quantity a.btn-decrease{
+    border-top:1px solid #8b8b8b;
+    border-bottom:1px solid #8b8b8b;
+    border-left:1px solid #8b8b8b;
+}
+.p-quantity a.btn-increase{
+    border-top:1px solid #8b8b8b;
+    border-bottom:1px solid #8b8b8b;
+    border-right:1px solid #8b8b8b;
+}
+.p-quantity a:hover{
+    background-color: #666;
+    color: #fff;
+    border-color: #666;
+}
+.p-quantity input{
+    float: left;
+    width:28px;
+    padding:0;
+    height:21px;
+    text-align: center;
+    line-height: 21px;
+    border:1px solid #8b8b8b;
+}
+.cart-main .p-subtotal {
+    color: #fe2000;
+}
+.cart-main .p-action a {
+    color: #026eb7;
+}
+.cart-main .p-action i {
+    padding: 0 3px;
+    font-family: serif;
+}
+.order-promotion, .order-coupon, .order-deduction, .unused-promotion {
+    text-align: left;
+    margin: 10px 0 10px 10px;
+    line-height: 20px;
+}
+.order-promotion h3, .order-coupon h3, .order-deduction h3 {
+    font-weight: 400;
+}
+.order-promotion h3, .order-coupon h3, .order-deduction h3, .unused-promotion h3 {
+    font-size: 116.66667%;
+    margin-bottom: 5px;
+}
+.order-promotion .content, .order-coupon .content, .order-deduction .content, .unused-promotion .content {
+    padding-left: 30px;
+}
+.order-promotion .btn-collapse, .order-coupon .btn-collapse, .order-deduction .btn-collapse, .order-promotion .btn-expand, .order-coupon .btn-expand, .order-deduction .btn-expand, .unused-promotion .btn-collapse, .unused-promotion .btn-expand {
+    margin-right: 10px;
+}
+.cart-main .order-price {
+    font-size: 14px;
+}
+
+.cart-main .order-price {
+    padding: 15px 1px 10px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+.cart-main .order-price ul {
+    float: right;
+}
+.cart-main .order-price li {
+    overflow: hidden;
+    clear: both;
+}
+.cart-main .order-price .total {
+    line-height: 40px;
+}
+.cart-main .order-price .label {
+    float: left;
+    text-align: right;
+    width: 200px;
+}
+.cart-main .order-price .total em, .cart-main .order-price .total .order-container .notice-box i, .order-container .notice-box .cart-main .order-price .total i {
+    font-weight: bold;
+}
+.cart-main .order-price .price {
+    float: left;
+    text-align: left;
+    width: 150px;
+    padding-left: 5px;
+    color: #fe2000;
+}
+.cart-main .order-price .price b {
+    font-weight: 400;
+}
+.cart-main .order-price .label i {
+    font-size: 12px;
+}
+.cart-main .order-price .total b {
+    font: 24px/1.5 Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+.cart-main .cart-left {
+    text-align: left;
+    padding: 10px 15px;
+    background-color: #efefef;
+    vertical-align: middle;
+}
+.btn-flat {
+    color: #666;
+    margin-right: 10px;
+}
+
+.btn {
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 100.0;
+    _overflow-y: hidden;
+}
+button {
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn-flat span {
+    background-color: #fff;
+}
+
+.btn span {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    padding-left: 10px;
+    height: 100%;
+    line-height: 1.91667;
+    font-size: inherit;
+}
+.btn span span {
+    border: 0 none;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.btn-caution {
+    color: #fff;
+}
+.btn-caution span{
+    background-image: linear-gradient(#f89416,#f49012);
+    padding-left: 15px;
+    border-color: transparent;
+}
+.btn-major span span, .btn-caution span span {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.cart-main .cart-right {
+    text-align: right;
+    padding: 10px 15px;
+    background-color: #efefef;
+}
+.btn-link {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.btn-huge {
+    font-size: 133.33333%;
+}
+
+.btn-import, .btn-major, .btn-caution {
+    color: #fff;
+}
+.btn-import span {
+    background-image: linear-gradient(#e2232c,#ca1823);
+}
+
+.btn-huge span {
+    padding-left: 30px;
+    line-height: 2.5;
+}
+.btn-import span, .btn-major span, .btn-caution span {
+    border-color: transparent;
+}
+.btn-huge span span {
+    padding-left: 0;
+    padding-right: 30px;
+}
+.btn-huge .f-icon {
+    font-size: 75%;
+    margin-left: 5px;
+}
+.f-icon {
+    font-family: Arial,sans-serif;
+}
+
+q {
+    quotes: none;
 }

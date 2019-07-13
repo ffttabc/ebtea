@@ -99,11 +99,21 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="cart-container">
+                    <div class="cart-container" id="cart_container">
                         <div class="title">
                             <h2>已选择的商品</h2>
                         </div>
                         <table width="100%" class="cart-main">
+                            <colgroup>
+                                <col class="col-1">
+                                <col class="col-2">
+                                <col class="col-3">
+                                <col class="col-4">
+                                <col class="col-5">
+                                <col class="col-6">
+                                <col class="col-7">
+                                <col class="col-8">
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th colspan="2">商品</th>
@@ -123,11 +133,11 @@
                                                 <img src="images/cart-1.jpg" alt=""></a>
                                         </div>
                                     </td>
-                                    <td class="p-info">
+                                    <td class="p-info" width="344px">
                                         <div class="p-title">
-                                            <a target="_blank" href="">品茶忆友
-                                                年年有余提梁正品紫砂壶宜兴 名家全手工原矿紫砂壶茶具</a></div>
-                                        <div class="p-spec fix-empty"></div>
+                                            <a target="_blank" href="">品茶忆友 铸铁壶煮茶壶老铁壶 日本铁壶南部铁壶水壶 木桶铁壶
+                                            </a></div>
+                                        <div class="p-spec fix-empty">型号：黑色</div>
                                         <!--赠品 -->
                                         <!--商品促销 -->
                                         <div class="p-promotion">
@@ -135,7 +145,7 @@
                                             </ul>
                                         </div>
                                     </td>
-                                    <td class="p-price">￥860.00</td>
+                                    <td class="p-price">￥159.00</td>
                                     <td>
                                         <div class="p-quantity">
                                             <a href="javascript:void(0);" class="btn-decrease">-</a>
@@ -143,11 +153,51 @@
                                                 value="1">
                                             <a href="javascript:void(0);" class="btn-increase">+</a>
                                         </div>
-                                        <span class="warn-message">余量有限</span>
+                                        <span class="warn-message"></span>
+                                    </td>
+                                    <td class="p-discount">￥159.00</td>
+                                    <td class="p-integral">159 </td>
+                                    <td class="p-subtotal">￥159.00</td>
+                                    <td class="p-action">
+                                        <a href="" class="btn-fav">收藏</a>
+                                        <i>|</i>
+                                        <a href="javascript:void(0);" class="btn-delete">移除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="cart-item">
+                                <tr class="cart-product last">
+                                    <td>
+                                        <div class="p-pic">
+                                            <a href="" target="_blank">
+                                                <img src="images/cart-1.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td class="p-info" width="344px">
+                                        <div class="p-title">
+                                            <a target="_blank" href="">品茶忆友 铸铁壶煮茶壶老铁壶 日本铁壶南部铁壶水壶 木桶铁壶
+                                            </a></div>
+                                        <div class="p-spec fix-empty">型号：黑色</div>
+                                        <!--赠品 -->
+                                        <!--商品促销 -->
+                                        <div class="p-promotion">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="p-price">￥159.00</td>
+                                    <td>
+                                        <div class="p-quantity">
+                                            <a href="javascript:void(0);" class="btn-decrease">-</a>
+                                            <input type="text" name="modify_quantity[goods_302_1130][quantity]"
+                                                value="1">
+                                            <a href="javascript:void(0);" class="btn-increase">+</a>
+                                        </div>
+                                        <span class="warn-message"></span>
                                     </td>
                                     <td class="p-discount">￥0.00</td>
-                                    <td class="p-integral">860 </td>
-                                    <td class="p-subtotal">￥860.00</td>
+                                    <td class="p-integral">159 </td>
+                                    <td class="p-subtotal">￥159.00</td>
                                     <td class="p-action">
                                         <a href="" class="btn-fav">收藏</a>
                                         <i>|</i>
@@ -180,17 +230,20 @@
                                         <ul>
                                             <li class="goods">
                                                 <span class="label"><em>商品总金额：</em></span>
-                                                <span class="price"><b>￥5288.00</b></span>
+                                                <span class="price"><b>￥318.00</b></span>
                                             </li>
                                             <li class="discount">
                                                 <span class="label"><em>订单优惠金额：</em></span>
-                                                <span class="price"><b>￥0.00</b></span>
+                                                <span class="price"><b>￥318.00</b></span>
                                             </li>
                                             <li class="total">
-                                                <span class="label"><i>(订单可得积分<span
-                                                            class="subtotal-integral">5288</span>)</i>
-                                                    <em>总金额：</em></span>
-                                                <span class="price"><b>￥5288.00</b></span>
+                                                <span class="label">
+                                                    <i>(订单可得积分
+                                                        <span class="subtotal-integral">318</span>)
+                                                    </i>
+                                                    <em>总金额：</em>
+                                                </span>
+                                                <span class="price"><b>￥318.00</b></span>
                                             </li>
                                         </ul>
                                     </td>
@@ -206,11 +259,53 @@
                                     <td colspan="4" class="cart-right">
                                         <a href="./" class="btn-link">继续购物</a>
                                         <button type="submit" class="btn btn-import btn-huge action-settle"
-                                            rel="_request"><span><span>下单结算<q
-                                                        class="f-icon">►</q></span></span></button> </td>
+                                            rel="_request">
+                                            <span>
+                                                <span>
+                                                    下单结算
+                                                    <q lass="f-icon">►</q>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </td>
                                 </tr>
                             </tfoot>
                         </table>
+                        <script>
+                            var table = document.getElementById("cart_container");
+                            var btns = table.getElementsByTagName("a");
+                            for (var btn of btns) {
+                                btn.onclick = function () {
+                                    var btn = this;
+                                    var inp = btn.parentNode.children[1];
+                                    var n = inp.value;
+                                    if (btn.innerHTML == "+") {
+                                        n++;
+                                    } else if (n > 1) {
+                                        n--;
+                                    }
+                                    inp.value = n;
+                                    var tr = btn.parentNode.parentNode.parentNode;
+                                    var price = parseFloat(tr.children[2].innerHTML.slice(1));
+                                    console.log(price);
+                                    var subtotal = price * n;
+                                    tr.children[5].innerHTML = `${subtotal}`;
+                                    tr.children[6].innerHTML = `￥${subtotal.toFixed(2)}`;
+                                    var tbodys = table.querySelectorAll("tbody");
+                                    var total=0;
+                                    for (var tbody of tbodys) {
+                                        var td=tbody.querySelector("tr.last>td.p-integral");
+                                        total+=parseFloat(td.innerHTML);
+                                    }
+                                        var b = table.querySelector("tfoot>tr>td.order-price>ul>li.goods>span.price>b");
+                                        b.innerHTML = `￥${total.toFixed(2)}`;
+                                        var integral = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.label span.subtotal-integral");
+                                        integral.innerHTML = `${total}`;
+                                        var money = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.price>b");
+                                        money.innerHTML = `￥${total.toFixed(2)}`;
+                                }
+                            }
+                        </script>
                     </div>
                     <div></div>
                 </div>
