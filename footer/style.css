@@ -29,6 +29,9 @@ div,dl{
 dd {
     margin-inline-start: 0px;
 }
+img:hover{
+    filter:opacity(70%);
+}
 .col-md-3, .col-sm-6 {
     position: relative;
     min-height: 1px;

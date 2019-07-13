@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+body {
+    font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: Microsoft YaHei,STHeiti,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+i,
+em {
+    font-style: normal;
+}
+input, select, textarea {
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 1px;
+}
+input, select, button, textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+input, select, button {
+    vertical-align: middle;
+}
+.tab-content  {
+    display: none;
+  }
+ #product_section .active {
+    display: block;
+    width:100%;
+  }
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .ebtea_main {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.ebtea_left {
+    width: 160px;
+    float: left;
+    overflow: hidden;
+    padding-top: 335px;
+}
+
+.e_history {
+    width: 158px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.inner_warp {
+    width: 1046px;
+    float: right;
+}
+
+.banner img {
+    display: block;
+}
+
+.bread-crumbs {
+    margin: 10px 0;
+    line-height: 2;
+}
+.mod {
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+}
+.mod h2 {
+    font-size: 116.66667%;
+}
+
+.mod-title {
+    background-color: #efefef;
+    line-height: 2.64286;
+    text-align: center;
+}
+.cart-title h1 .shop-cart{
+    font: 400 24px/1.5 Microsoft YaHei,STHeiti,sans-serif;
+    color: #666;
+    text-align: left;
+    margin-left:-8px;
+}
+.cart-title h1 .icon{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -3px;
+    height: 36px;
+    width:26px;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 36px;
+    font-size: 26px;
+    color:#666666;
+}
+.steps {
+    margin: 20px -2px;
+}
+.steps .step-item {
+    font: 16px/30px Microsoft YaHei,STHeiti,sans-serif;
+    color:#8c8c8c;
+    /* width: 28%; */
+}
+.steps .step-item {
+    background-color: #efefef;
+    padding: 0;
+    white-space: nowrap;
+    width:292px;
+}
+.steps .step-item {
+    font-size: 16px;
+    line-height: 30px;
+}
+.steps .active {
+    background-color: #faa419;
+    color: #fff;
+}
+.steps .active .icon{
+    color:#fff ;
+}
+.steps span {
+    display: block;
+    padding: 0 15px;
+}
+.steps span .icon{
+    font-size:24px;
+    vertical-align: -2px;
+    color: #cbcbcb;
+}
+.steps i {
+    display: inline-block;
+}
+.steps .active i {
+    color: #faa419;
+}
+.steps i {
+    color: #fff;
+    width: 20px;
+    text-align: center;
+    margin-right: 4px;
+    margin-left: -25px;
+    *vertical-align: 1px;
+}
+.steps .step-arrow {
+    color: #ccc;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+}
+.steps .step-arrow .arrow{
+    font-size:25px;
+}
+.cart-container .title{
+    padding:0 0 5px 10px;
+}
+.cart-container .title h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+.cart-main {
+    color: #666;
+}
+
+.cart-main {
+    border: 1px solid #e6e6e6;
+    table-layout: fixed;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.cart-main thead{
+    background:#efefef;
+}
+.cart-main thead tr{
+    height:37px;
+}
+.cart-main thead th {
+    font-weight: 400;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.cart-main .cart-item {
+    border-bottom: 1px solid #efefef;
+}
+.cart-main .cart-product td {
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.cart-main td {
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
+    padding: 2px 0;
+}
+.cart-main .p-pic {
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+}
+.cart-main .p-pic img {
+    max-width: 80px;
+    max-height: 80px;
+    vertical-align: middle;
+}
+.cart-main .p-info {
+    text-align: left;
+}

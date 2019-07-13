@@ -19,6 +19,9 @@ ul{
     margin: 0;
     padding: 0;
 }
+img:hover{
+    filter:opacity(70%);
+}
 #topbar{
     height:32px;
     line-height:32px;
@@ -131,11 +134,67 @@ ul{
     font-size: 14px;
     font-weight: bold;
 }
-#nav .nav-left .nav-hand a{
+#nav .nav-left .nav-hand a.every{
     color: white;
     display: block;
     background-color: #46ba11;
 }
+
+
+
+
+#nav .nav-hand .nav-content-item a{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top:1px;
+    display: block;
+    color: #000;
+    font-weight: 400;
+    overflow: hidden;
+    text-align: left;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+#nav .nav-hand .nav-content-item a .text{
+    width: 123px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    /* vertical-align: middle; */
+    float: left;
+    font-size:14px;
+}
+#nav .nav-hand .nav-content-item a .icon{
+    color: #aaaaaa;
+    width: 5px;
+    display: block;
+    /* vertical-align: middle; */
+    float: right;
+}
+#nav .nav-left .nav-hand>ul>li>ul{
+    /* 如果只做单纯的显示，就这个：display:none; */
+    top:35px;
+    height:0px;
+    opacity:0;
+    overflow: hidden;
+    transition:all .5s linear;
+  }
+#nav .nav-left .nav-hand ul li .category-content{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 47px;
+    width: 160px;
+  }
+  #nav .nav-left .nav-hand ul li:hover ul{
+    /* 如果只做单纯的显示，就这个：display:block; */
+    opacity:1;
+    height:334.578px;
+  }
+
+
+
+
 .nav-main{
     width: 825px;
     margin-left:0;
@@ -196,29 +255,4 @@ ul{
     position: relative;
     font-size: 14px;
 }
-.nav-content .nav-content-item a{
-    padding-left: 20px;
-    padding-right: 10px;
-    display: block;
-    color: #666666;
-    overflow: hidden;
-    border-left: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-}
-.nav-content .nav-content-item a .text{
-    width: 123px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    vertical-align: middle;
-    float: left;
-    font-size:14px;
-}
-.nav-content .nav-content-item a .icon{
-    color: #aaaaaa;
-    width: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-}
+

@@ -26,6 +26,9 @@ h1,h2,h3{
 i{
     font-style:normal;
 }
+img:hover{
+    filter:opacity(70%);
+}
 .goods-item .goods-name{
     margin-bottom: 10px;
 }
