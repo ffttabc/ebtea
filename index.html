@@ -1,14 +1,20 @@
 <!doctype html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>茗茶网-茶叶、茶具、茶文化、品茶忆友、铁壶</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="header/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
-
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+                $(document).ready(function () {
+                    $('.configHead').load('header/header.html');
+        //             $('.configFoot').load('homeFooter.html');
+                });
+    </script>
 </head>
-
 <body>
+	<div class="configHead"></div>
 	<div class="section-banner">
 		<div class=banner-wrap>
 			<div id="main-slide">

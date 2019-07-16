@@ -100,11 +100,8 @@ input, select, button {
     line-height: 2.64286;
     text-align: center;
 }
-#product_section{
-    position: relative;
-}
 #product_consult{
-    position: absolute;
+    position: relative;;
     top:0;
     left:0;
 }

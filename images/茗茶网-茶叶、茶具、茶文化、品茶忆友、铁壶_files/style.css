@@ -38,19 +38,17 @@ img:hover{
     float: left;
 }
 .container {
-	width: 1140px;
+	width: 1226px;
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-.container::before ,.clearfix::before {
+.container::before , .container::after , .clearfix::before , .clearfix::after {
     content: '';
     display: table;
 }
 .container::after , .clearfix::after  {
-     content: '';
-    display: block;
     clear: both;
 }
 .footer1 {
