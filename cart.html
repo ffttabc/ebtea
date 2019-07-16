@@ -203,6 +203,126 @@
                                     </td>
                                 </tr>
                             </tbody>
+                            <tbody class="cart-item">
+                                <tr class="cart-product last">
+                                    <td>
+                                        <div class="p-pic">
+                                            <a href="" target="_blank">
+                                                <img src="images/cart-1.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td class="p-info" width="344px">
+                                        <div class="p-title">
+                                            <a target="_blank" href="">品茶忆友 铸铁壶煮茶壶老铁壶 日本铁壶南部铁壶水壶 木桶铁壶
+                                            </a></div>
+                                        <div class="p-spec fix-empty">型号：黑色</div>
+                                        <!--赠品 -->
+                                        <!--商品促销 -->
+                                        <div class="p-promotion">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="p-price">￥159.00</td>
+                                    <td>
+                                        <div class="p-quantity">
+                                            <a href="javascript:void(0);" class="btn-decrease">-</a>
+                                            <input type="text" name="modify_quantity[goods_302_1130][quantity]"
+                                                value="1">
+                                            <a href="javascript:void(0);" class="btn-increase">+</a>
+                                        </div>
+                                        <span class="warn-message"></span>
+                                    </td>
+                                    <td class="p-discount">￥0.00</td>
+                                    <td class="p-integral">159 </td>
+                                    <td class="p-subtotal">￥159.00</td>
+                                    <td class="p-action">
+                                        <a href="" class="btn-fav">收藏</a>
+                                        <i>|</i>
+                                        <a href="javascript:void(0);" class="btn-delete">移除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="cart-item">
+                                <tr class="cart-product last">
+                                    <td>
+                                        <div class="p-pic">
+                                            <a href="" target="_blank">
+                                                <img src="images/cart-1.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td class="p-info" width="344px">
+                                        <div class="p-title">
+                                            <a target="_blank" href="">品茶忆友 铸铁壶煮茶壶老铁壶 日本铁壶南部铁壶水壶 木桶铁壶
+                                            </a></div>
+                                        <div class="p-spec fix-empty">型号：黑色</div>
+                                        <!--赠品 -->
+                                        <!--商品促销 -->
+                                        <div class="p-promotion">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="p-price">￥159.00</td>
+                                    <td>
+                                        <div class="p-quantity">
+                                            <a href="javascript:void(0);" class="btn-decrease">-</a>
+                                            <input type="text" name="modify_quantity[goods_302_1130][quantity]"
+                                                value="1">
+                                            <a href="javascript:void(0);" class="btn-increase">+</a>
+                                        </div>
+                                        <span class="warn-message"></span>
+                                    </td>
+                                    <td class="p-discount">￥0.00</td>
+                                    <td class="p-integral">159 </td>
+                                    <td class="p-subtotal">￥159.00</td>
+                                    <td class="p-action">
+                                        <a href="" class="btn-fav">收藏</a>
+                                        <i>|</i>
+                                        <a href="javascript:void(0);" class="btn-delete">移除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="cart-item">
+                                <tr class="cart-product last">
+                                    <td>
+                                        <div class="p-pic">
+                                            <a href="" target="_blank">
+                                                <img src="images/cart-1.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td class="p-info" width="344px">
+                                        <div class="p-title">
+                                            <a target="_blank" href="">品茶忆友 铸铁壶煮茶壶老铁壶 日本铁壶南部铁壶水壶 木桶铁壶
+                                            </a></div>
+                                        <div class="p-spec fix-empty">型号：黑色</div>
+                                        <!--赠品 -->
+                                        <!--商品促销 -->
+                                        <div class="p-promotion">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="p-price">￥159.00</td>
+                                    <td>
+                                        <div class="p-quantity">
+                                            <a href="javascript:void(0);" class="btn-decrease">-</a>
+                                            <input type="text" name="modify_quantity[goods_302_1130][quantity]"
+                                                value="1">
+                                            <a href="javascript:void(0);" class="btn-increase">+</a>
+                                        </div>
+                                        <span class="warn-message"></span>
+                                    </td>
+                                    <td class="p-discount">￥0.00</td>
+                                    <td class="p-integral">159 </td>
+                                    <td class="p-subtotal">￥159.00</td>
+                                    <td class="p-action">
+                                        <a href="" class="btn-fav">收藏</a>
+                                        <i>|</i>
+                                        <a href="javascript:void(0);" class="btn-delete">移除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="4">
@@ -289,17 +409,20 @@
                                     var subtotal = price * n;
                                     tr.children[5].innerHTML = `${subtotal}`;
                                     tr.children[6].innerHTML = `￥${subtotal.toFixed(2)}`;
+
+
+
                                     var tbodys = table.querySelectorAll("tbody");
+                                    var b = table.querySelector("tfoot>tr>td.order-price>ul>li.goods>span.price>b");
+                                     var integral = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.label span.subtotal-integral");
+                                    var money = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.price>b");
                                     var total=0;
                                     for (var tbody of tbodys) {
                                         var td=tbody.querySelector("tr.last>td.p-integral");
                                         total+=parseFloat(td.innerHTML);
                                     }
-                                        var b = table.querySelector("tfoot>tr>td.order-price>ul>li.goods>span.price>b");
                                         b.innerHTML = `￥${total.toFixed(2)}`;
-                                        var integral = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.label span.subtotal-integral");
                                         integral.innerHTML = `${total}`;
-                                        var money = table.querySelector("tfoot>tr>td.order-price>ul>li.total>span.price>b");
                                         money.innerHTML = `￥${total.toFixed(2)}`;
                                 }
                             }
