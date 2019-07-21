@@ -8,7 +8,7 @@ body {
     line-height: 1.5;
 }
 
-body {
+bbody {
     font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
 }
 
@@ -66,11 +66,98 @@ menu {
 .filter-container {
     border: 1px solid #d3d3d3;
     width:1044px;
-    height:290.828px;
 }
 .gallery-sortbar {
     border: 1px solid #ddd;
     background-color: #f3f3f3;
     width:1044px;
     height:67px;
+}
+.main-content .filter-title{
+    line-height: 2.83333;
+    padding:0 10px;
+    background-color:#ddd;
+    }
+.main-content .filter-title h3,.gallery-total-info{
+    float: left;
+}
+.main-content .filter-title .filter-clean{
+    float: right;
+}
+.main-content .filter-title::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.filter-container .filter-title .gallery-total-info b {
+    color: #d62528;
+}
+.filter-container .filter-title .filter-clean{
+    width:72px;
+    height:35.2px;
+    line-height: 35.2px;
+}
+.filter-container .filter-title .filter-clean a{
+    width:72px;
+    display: inline-block;
+}
+.filter-container .filter-title .filter-clean a i{
+    font-weight: bold;
+    margin-left: 4px;
+    top: -1px;
+    position: relative;
+}
+.gallery-filter .filter-selected{
+    padding:6px 10px 3px;
+    background-color:#f3f3f3;
+}
+.gallery-filter .filter-selected .filter-selected-list::after{
+   content:"";
+    display: block;
+    clear: both;
+}
+.gallery-filter .filter-selected .filter-selected-list dt{
+   float: left;
+   margin-right:3px;
+   width:76px;
+   text-align: right;
+}
+.gallery-filter .filter-selected .filter-selected-list dd{
+   margin-left: 81px;
+   min-height: 23px;
+}
+.gallery-filter .filter-lists-container{
+    padding: 10px 10px 5px;
+}
+.filter-lists-container .filter-entries {
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+.filter-lists-container .filter-entries::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.filter-lists-container .filter-entries .filter-entries-label {
+    margin-right: 3px;
+    width:76px;
+    text-align: right;
+    float: left;
+}
+.filter-lists-container .filter-entries .filter-entries-values {
+    margin-left:80px;
+    margin-right: 50px;
+}
+.filter-item {
+    margin: 0 3px 3px 3px;
+}
+.filter-item {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+.filter-lists-container .active {
+    background-color: #d62528;
 }

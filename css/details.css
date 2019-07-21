@@ -953,11 +953,8 @@ table {
 .p5 {
     padding: 5px;
 }
-#product_section{
-    position: relative;
-}
 #product_detail,#product_comment,#product_consult,#product_saleslog,#product_shfw,#product_ysbz{
-    position: absolute;
+    position: relative;
     top:0;
     left:0;
 }

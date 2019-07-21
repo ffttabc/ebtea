@@ -1,14 +1,5 @@
-*{
-    padding:0;
-    margin:0;
-}
-body {
+body{
     font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
-}
-body {
-    font-size: 75%;
-    line-height: 1.5;
-    height:2000px;
 }
 a{
     color:#666;
@@ -72,7 +63,7 @@ img:hover{
 .header-main{
     margin-left: 20px;
     width: 490px;
-        margin-top: 25px;
+    margin-top: 25px;
 }
 .header-main input{
     width: 390px;
@@ -84,8 +75,10 @@ img:hover{
 .header-main .x-input{
     border-width: 1px;
     border-color: #ccc;
-    padding: 1px 10px;
+    padding: 1px;
     border-style: solid;
+    position: relative;
+    top:-1px;
 }
 .header-main button{
     height: 34px;
@@ -112,6 +105,8 @@ img:hover{
 .header-main .hots{
     line-height: 25px;
     color: #666666;
+    position: relative;
+    top:-1px;
 }
 .header-right{
     float:right;
@@ -151,7 +146,7 @@ img:hover{
     padding-right: 10px;
     padding-top:1px;
     display: block;
-    color: #000;
+    color: #666;
     font-weight: 400;
     overflow: hidden;
     text-align: left;
@@ -175,14 +170,7 @@ img:hover{
     /* vertical-align: middle; */
     float: right;
 }
-#nav .nav-left .nav-hand>ul>li>ul{
-    /* 如果只做单纯的显示，就这个：display:none; */
-    top:35px;
-    height:0px;
-    opacity:0;
-    overflow: hidden;
-    transition:all .2s linear;
-  }
+
 #nav .nav-left .nav-hand ul li .category-content{
     background-color: #f9f9f9;
     border-bottom: 1px solid #e0e0e0;
@@ -190,13 +178,8 @@ img:hover{
     width: 160px;
     position: absolute;
     z-index: 10;
-    margin-top:5px;
   }
-  #nav .nav-left .nav-hand ul li:hover ul{
-    /* 如果只做单纯的显示，就这个：display:block; */
-    opacity:1;
-    height:334.578px;
-  }
+  
 
 
 

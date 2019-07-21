@@ -3,18 +3,26 @@
 	<meta charset="UTF-8">
 	<title>茗茶网-茶叶、茶具、茶文化、品茶忆友、铁壶</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="header/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<script src="js/jquery.min.js"></script>
-	<script type="text/javascript">
-                $(document).ready(function () {
-                    $('.configHead').load('header/header.html');
-        //             $('.configFoot').load('homeFooter.html');
-                });
-    </script>
+	<style>
+	#nav .nav-left .nav-hand ul li:hover ul{
+    /* 如果只做单纯的显示，就这个：display:block; */
+    opacity:1;
+    height:334.578px;
+  }
+  #nav .nav-left .nav-hand>ul>li>ul{
+    /* 如果只做单纯的显示，就这个：display:none; */
+    top:35px;
+    height:0px;
+    opacity:0;
+    overflow: hidden;
+    transition:all .2s linear;
+  }
+	</style>
 </head>
 <body>
-	<div class="configHead"></div>
+	<div id="header"></div>
 	<div class="section-banner">
 		<div class=banner-wrap>
 			<div id="main-slide">
@@ -515,6 +523,10 @@
 			</div>
 		</div>
 	</div>
+	<footer id="footer"></footer>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	
 </body>
 
 </html>

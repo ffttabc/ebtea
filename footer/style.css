@@ -1,11 +1,4 @@
-html,body{
-	margin:0;
-	padding:0;
-    font-family: Lucida Grande,Lucida Sans Unicode,Tahoma,Helvetica,Arial,Hiragino Sans GB,sans-serif;
-    height:100%;
-    font-size: 75%;
-    line-height: 1.5;
-}
+
 ul,li {
 	margin: 0;
 	padding: 0;
@@ -38,7 +31,7 @@ img:hover{
     float: left;
 }
 .container {
-	width: 1140px;
+	width: 1225px;
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

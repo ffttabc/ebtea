@@ -30,6 +30,7 @@ ul{
     width: 100%; 
     height: 450px;
     position: relative;
+    margin-bottom:50px;
 }
 .section::after{
     content:'';
@@ -53,12 +54,12 @@ ul{
     left: 50%;
     transform: translateX(-50%);
     z-index: 500;
-    width: 1140px;
+    width: 1225px;
     height:400px;
     background:#000;
 }
 .imgs img{
-    width:1140px;
+    width:1225px;
     margin-top:55px;
 }
 .signin {
