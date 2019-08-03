@@ -8,7 +8,7 @@ body {
     line-height: 1.5;
 }
 
-bbody {
+body {
     font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
 }
 
@@ -23,6 +23,22 @@ menu {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+em, i {
+    font-style: normal;
+}
+input, select, button, textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+input, select, button {
+    vertical-align: middle;
+}
+input, select, textarea {
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 1px;
 }
 .mod-bottom, .mod, .form-item, .signupin-content .form-item-normal, .signin, .signup, .sign-title, .signup-success .descrip, .related-search, .filter-container, .gallery-sortbar, .goods-item .goods-name, .brand-desc h2, .share-recommend .pop-body .notice, .product-promotion, .product-params, .detail-content, .product-tags, .product-attributes, .product-parameters, .product-saleslog, .product-score .btn-discuss, .post-comment .scores-list, .member-welcome, .member-notice, .member-welcome-tips, .member-mod, .member-address-submit, .member-tabs, .member-aftersales-record .aftersales-desc .desc .desc-title {
     margin-bottom: 10px;
@@ -160,4 +176,90 @@ menu {
 }
 .filter-lists-container .active {
     background-color: #d62528;
+}
+.filter-lists-container .active .handle{
+    color:  #fff;
+}
+.filter-entries .filter-entries-more{
+    float:right
+}
+.gallery-filter .filter-more{
+    margin-left: 81px;
+    line-height: 30px;
+}
+.gallery-filter .filter-promotion {
+    line-height: 22px;
+}
+.filter-promotion dt {
+    float: left;
+    margin-right: 3px;
+    width: 76px;
+    text-align: right;
+}
+.filter-promotion dd {
+    margin-left: 81px;
+}
+.filter-promotion .active {
+    background-color: #d62528;
+}
+.filter-promotion .active .handle {
+    color: #fff;
+}
+.gallery-sortbar .gallery-sort {
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.gallery-sortbar .gallery-sort .active {
+    color: #d62528;
+    border-color: #999;
+}
+.gallery-sortbar .gallery-sort .active em {
+    width:24px;
+}
+.gallery-sortbar .gallery-sort a {
+    border: 1px solid #d3d3d3;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #f3f3f3;
+    color: #666;
+}
+.gallery-sort a {
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#f9f9f9),color-stop(100%,#f0f0f0));
+    background-image: -webkit-linear-gradient(#f9f9f9,#f0f0f0);
+    background-image: -moz-linear-gradient(#f9f9f9,#f0f0f0);
+    background-image: linear-gradient(#f9f9f9,#f0f0f0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=true,gradientType=0,startColorstr='#FFF9F9F9',endColorstr='#FFF0F0F0') \9;
+}
+.gallery-sortbar .gallery-sort em {
+    padding: 1px 8px;
+    display: inline-block;
+    line-height: 20px;
+    width:36px;
+    text-align: center;
+}
+.gallery-sortbar .gallery-sort em {
+    border: 1px solid #fff;
+}
+select {
+    line-height: 25px;
+}
+.gallery-sortbar .sortbar-filter-tags {
+    background-color: #fff;
+    clear: both;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+.gallery-sortbar .sortbar-filter-tags label {
+    margin-right: 5px;
+}
+input[type=checkbox]{
+    height: 13px;
+}
+
+input {
+    line-height: 21px;
+    height: 21px;
 }

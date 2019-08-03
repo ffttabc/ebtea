@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <title>茗茶网-茶叶、茶具、茶文化、品茶忆友、铁壶</title>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
 </head>
 
 <body>
-    <div id="header" ></div>
+    <div id="header"></div>
     <div class="container">
         <div class="ebtea_main">
             <!-- left-aside -->
@@ -76,134 +77,265 @@
                                     <dd></dd>
                                 </dl>
                             </div>
-                            <div class="filter-lists-container">
+                            <div class="filter-lists-container" id="filter_lists">
                                 <dl class="filter-entries">
                                     <dt class="filter-entries-label">品牌：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item active"><a href="javascript:;">不限</a></span>
-                                        <span class="filter-item">品茶忆友</span>
-                                        <span class="filter-item">PICAEYO</span>
-                                        <span class="filter-item">尚明</span>
-                                        <span class="filter-item">一屋窑</span>
-                                        <span class="filter-item">莺歌烧</span>
+                                        <span class="filter-item active"><a href="javascript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">品茶忆友</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">PICAEYO</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">尚明</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">一屋窑</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">莺歌烧</a></span>
                                     </dd>
                                 </dl>
                                 <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                    <dt class="filter-entries-label">价格：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">1-99元</a></span>
+                                        <span class="filter-item"><a href="javacript:;">100-399元</a></span>
+                                        <span class="filter-item"><a href="javacript:;">400-999元</a></span>
+                                        <span class="filter-item"><a href="javacript:;">1000-1499元</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 1500-3000元</a></span>
                                     </dd>
                                 </dl>
                                 <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                    <dt class="filter-entries-label">材质：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铸铁</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铜器</a></span>
+                                        <span class="filter-item"><a href="javacript:;">银器</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 不锈钢</a></span>
+                                        <span class="filter-item"><a href="javacript:;">锡 </a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 铜、银</a></span>
                                     </dd>
                                 </dl>
                                 <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                    <dt class="filter-entries-label">容量：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">99ml以下</a></span>
+                                        <span class="filter-item"><a href="javacript:;">100-399ml </a></span>
+                                        <span class="filter-item"><a href="javacript:;">400-699ml</a></span>
+                                        <span class="filter-item"><a href="javacript:;">700-699ml</a></span>
+                                        <span class="filter-item"><a href="javacript:;">1000ml以上</a></span>
+                                        <span class="filter-item"><a href="javacript:;">700-1000ml </a></span>
+                                        <span class="filter-item"><a href="javacript:;">350-450ml</a></span>
                                     </dd>
                                 </dl>
                                 <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                    <dt class="filter-entries-label">工艺：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">刻花</a></span>
+                                        <span class="filter-item"><a href="javacript:;">磨砂</a></span>
+                                        <span class="filter-item"><a href="javacript:;">纯手工</a></span>
+                                        <span class="filter-item"><a href="javacript:;">半手工</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铸铁</a></span>
+                                        <span class="filter-item"><a href="javacript:;">其它 </a></span>
+                                        <span class="filter-item"><a href="javacript:;">机制</a></span>
+                                        <span class="filter-item"><a href="javacript:;">手工</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">包装：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">普通纸盒包装</a></span>
+                                        <span class="filter-item"><a href="javacript:;">木盒包装</a></span>
+                                        <span class="filter-item"><a href="javacript:;">礼品盒包装</a></span>
+                                        <span class="filter-item"><a href="javacript:;">其它</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 精美包装</a></span>
+                                        <span class="filter-item"><a href="javacript:;">简单包装</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">选购热点：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">迷你 </a></span>
+                                        <span class="filter-item"><a href="javacript:;">小容量</a></span>
+                                        <span class="filter-item"><a href="javacript:;">特价</a></span>
+                                        <span class="filter-item"><a href="javacript:;">家用</a></span>
+                                        <span class="filter-item"><a href="javacript:;">无涂层</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">适用空间：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">客厅</a></span>
+                                        <span class="filter-item"><a href="javacript:;">厨房</a></span>
+                                        <span class="filter-item"><a href="javacript:;">办公室</a></span>
+                                        <span class="filter-item"><a href="javacript:;">茶室</a></span>
+                                        <span class="filter-item"><a href="javacript:;">室外和室内即可</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">风格：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">现代中式</a></span>
+                                        <span class="filter-item"><a href="javacript:;">简约现代</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 新古典</a></span>
+                                        <span class="filter-item"><a href="javacript:;">古典</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">适用灶炉：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">通用</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 煤气灶 </a></span>
+                                        <span class="filter-item"><a href="javacript:;">电磁炉</a></span>
+                                        <span class="filter-item"><a href="javacript:;">电陶炉</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">使用范围：</dt>
                                     <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                        <span class="filter-item active"><a href="javacript:;" class="handle">不限
+                                            </a></span>
+                                        <span class="filter-item"><a href="javacript:;">办公室泡茶、个人泡茶、茶馆泡茶、送礼</a></span>
                                     </dd>
                                 </dl>
-                                <dl class="filter-entries">
-                                    <dt class="filter-entries-label"></dt>
-                                    <dd class="filter-entries-values">
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
-                                        <span class="filter-item"></span>
+                                <dl class="filter-entries" style="display: none">
+                                    <dt class="filter-entries-label">型号：</dt>
+                                    <dd class="filter-entries-more">
+                                        <a href="javascript:;" data-toggle=brandlist>
+                                            <span>更多</span>
+                                            <i></i>
+                                        </a>
+                                    </dd>
+                                    <dd class="filter-entries-values " id="show">
+                                        <span class="filter-item active"><a href="javacript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铜盖</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铁盖</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铁制</a></span>
+                                        <span class="filter-item"><a href="javacript:;">铜制 </a></span>
+                                        <span class="filter-item"><a href="javacript:;">银制</a></span>
+                                        <span class="filter-item"><a href="javacript:;">黑色 </a></span>
+                                        <span class="filter-item"><a href="javacript:;">铁锈色</a></span>
+                                        <span class="filter-item"><a href="javacript:;">银色</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 玫红色</a></span>
+                                        <span class="filter-item"><a href="javacript:;"> 仿古色</a></span>
+                                        <span class="filter-item" style="display: none"><a
+                                                href="javacript:;">古铜色</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">0.8ml
+                                            </a></span>
+                                        <span class="filter-item" style="display: none"><a
+                                                href="javacript:;">0.9ml</a></span>
+                                        <span class="filter-item" style="display: none"><a
+                                                href="javacript:;">1.0ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">1.1ml
+                                            </a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.2ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.3ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.4ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.5ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.6ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.7ml</a></span>
+                                        <span class="filter-item" style="display: none"><a href="javacript:;">
+                                                1.8ml</a></span>
+                                    </dd>
+                                    <script>
+                                        // $("#show>span:gt(11)").hide();
+                                        $("a[data-toggle=brandlist]").click(function () {
+                                            if ($("a[data-toggle=brandlist]>span").html() == "更多") {
+                                                $("#show>span").show();
+                                                $("a[data-toggle=brandlist]>span").html("收起")
+                                            } else {
+                                                $("#show>span:gt(11)").hide();
+                                                $("a[data-toggle=brandlist]>span").html("更多")
+                                            }
+                                        })
+                                    </script>
+                                </dl>
+                            </div>
+                            <div class="filter-more">
+                                <a href="javascript:;" data-toggle=more>
+                                    <span>显示更多筛选项</span>
+                                    <i></i>
+                                </a>
+                                <script>
+                                    $("a[data-toggle=more]").click(function () {
+                                        if ($("a[data-toggle=more]>span").html() == "显示更多筛选项") {
+                                            $("#filter_lists>dl").show();
+                                            $("a[data-toggle=more]>span").html("收起筛选项")
+                                        } else {
+                                            $("#filter_lists>dl:gt(5)").hide();
+                                            $("a[data-toggle=more]>span").html("显示更多筛选项")
+                                        }
+                                    })
+                                </script>
+                            </div>
+                            <div class="filter-promotion">
+                                <dl data-label="pTag">
+                                    <dt class="filter-promotion-label">促销商品：</dt>
+                                    <dd class="filter-promotion-values">
+                                        <span class="filter-item active"><a href="javascript:;"
+                                                class="handle">不限</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">减价</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">包邮 </a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">送积分</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">打折</a></span>
+                                        <span class="filter-item"><a href="javascript:;" class="">送赠品</a></span>
                                     </dd>
                                 </dl>
                             </div>
-                            <div></div>
-                            <div></div>
                         </div>
                     </div>
-                    <div class="gallery-sortbar clearfix"></div>
+                    <div class="gallery-sortbar clearfix">
+                        <div class="gallery-sort">
+                            <a href="javascript:;" class="action-sort active"><em>默认</em></a>
+                            <a href="javascript:;" class="action-sort"><em>价格</em></a>
+                            <a href="javascript:;" class="action-sort"><em>销量</em></a>
+                            <label for="">排序：</label>
+                            <select name="orderBy" id="" class="action-orderby">
+                                <option value="" selected="">默认</option>
+                                <option value="last_modify desc">按发布时间 新-&gt;旧</option>
+                                <option value="last_modify asc">按发布时间 旧-&gt;新</option>
+                                <option value="price desc">按价格 从高到低</option>
+                                <option value="price asc">按价格 从低到高</option>
+                                <option value="view_w_count desc">访问周次数</option>
+                                <option value="view_count desc">总访问次数</option>
+                                <option value="buy_count desc">周购买次数</option>
+                                <option value="buy_w_count desc">总购买次数</option>
+                            </select>
+                        </div>
+                        <div class="sortbar-filter-tags">
+                            <label for="">筛选：</label>
+                            <input type="checkbox" name="gTag" id="" class="action-gtags" value="13">
+                            <label for="">超低价</label>
+                            <input type="checkbox" name="gTag" id="" class="action-gtags" value="12">
+                            <label for="">新品上市</label>
+                            <input type="checkbox" name="gTag" id="" class="action-gtags" value="9">
+                            <label for="">送赠品</label>
+                            <input type="checkbox" name="gTag" id="" class="action-gtags" value="2">
+                            <label for="">流行热卖</label>
+                            <input type="checkbox" name="gTag" id="" class="action-gtags" value="1">
+                            <label for="">特价专区</label>
+                        </div>
+                    </div>
                     <div class="gallery-show">
                         <div class="gallery-grid"></div>
                         <!-- 页码 -->
@@ -214,8 +346,8 @@
         </div>
     </div>
     <footer id="footer"></footer>
-	<script src="js/header.js"></script>
-	<script src="js/footer.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>
