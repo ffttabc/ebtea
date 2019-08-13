@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: Microsoft YaHei,STHeiti,sans-serif;
+}
+i,
+em {
+    font-style: normal;
+}
+input, select, textarea {
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 1px;
+}
+input, select, button, textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+input, select, button {
+    vertical-align: middle;
+}
+.tab-content  {
+    display: none;
+  }
+ #product_section .active {
+    display: block;
+    width:100%;
+  }
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .ebtea_main {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.ebtea_left {
+    width: 160px;
+    float: left;
+    overflow: hidden;
+    padding-top: 335px;
+}
+
+.e_history {
+    width: 158px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.inner_warp {
+    width: 1046px;
+    float: right;
+}
+
+.banner img {
+    display: block;
+}
+
+.bread-crumbs {
+    margin: 10px 0;
+    line-height: 2;
+}
+.mod {
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+}
+.mod h2 {
+    font-size: 116.66667%;
+}
+
+.mod-title {
+    background-color: #efefef;
+    line-height: 2.64286;
+    text-align: center;
+}
+#product_consult{
+    position: relative;
+    top:0;
+    left:0;
+}
+#product_consult .consult-title{
+    padding: 5px 20px 10px;
+    line-height: 2;
+    overflow: hidden;
+}
+.license{
+    width:100%;
+    border:1px solid transparent;
+    box-sizing: border-box;
+}
+.license p{
+    text-indent: 2em;
+}
