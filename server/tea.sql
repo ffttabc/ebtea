@@ -124,6 +124,14 @@ CREATE TABLE tea_index_carousel(
   href VARCHAR(128)
 );
 
+
+/****logo图片****/
+CREATE TABLE tea_index_logo(
+  gid INT PRIMARY KEY AUTO_INCREMENT,
+  img VARCHAR(128),
+  title VARCHAR(64)
+);
+
 /****首页商品****/
 CREATE TABLE tea_index_product(
   pid INT PRIMARY KEY AUTO_INCREMENT,
@@ -347,6 +355,14 @@ INSERT INTO tea_index_carousel VALUES
 (NULL, 'img/slide3.jpg','轮播广告商品3',NULL),
 (NULL, 'img/slide4.jpg','轮播广告商品4',NULL);
 
+/****logo图片****/
+INSERT INTO tea_index_logo VALUES
+(NULL, 'img/logo1.jpg','logo1'),
+(NULL, 'img/logo2.jpg','logo2'),
+(NULL, 'img/logo3.jpg','logo3'),
+(NULL, 'img/logo4.gif','logo4'),
+(NULL, 'img/logo5.gif','logo5');
+
 /****首页商品****/
 INSERT INTO tea_index_product VALUES
 (1, '品茶忆友 平口肌纹铁壶', 'img/80.jpg', 699.00, NULL, NULL),
@@ -354,7 +370,7 @@ INSERT INTO tea_index_product VALUES
 (3, '\r\n品茶忆友 南瓜紫砂杯','img/51.jpg', 248.00, NULL, NULL),
 (4, '品茶忆友 天圆套组','img/26.jpg', 330.00, NULL, NULL),
 (5, '品茶忆友 白牡丹茶叶','img/76.jpg', 88.00, NULL, NULL),
-(6, '品茶忆友 黑檀木茶盘套装','img/58ipg', 1430.00, NULL, NULL),
+(6, '品茶忆友 黑檀木茶盘套装','img/58.jpg', 1430.00, NULL, NULL),
 
 /*****1F********/
 (7, NULL,'img/1F/19.jpg', NULL, NULL, NULL),
@@ -376,7 +392,7 @@ INSERT INTO tea_index_product VALUES
 (21, '品茶忆友 同享套装','img/2F/39.jpg', 169.00, 338.00, NULL),
 (22, '品茶忆友 紫砂套装','img/2F/42.jpg', 169.00, 938.00, NULL),
 (23, '品茶忆友 青花套装','img/2F/84.jpg', 499.00, 998.00, NULL),
-(24, '品茶忆友巧云汝窑茶具套装','img/2F/79.jpg', 239.00, 478.00, NULL),
+(24, '品茶忆友巧云汝窑茶具套装','img/2F/79.png', 239.00, 478.00, NULL),
 
 
 /*****3F********/
