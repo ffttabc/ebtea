@@ -2,7 +2,7 @@ const express=require("express");
 const router=express.Router();
 const pool=require("../pool");
 
-router.get("/",(req,res)=>{
+router.get("/details",(req,res)=>{
     var lid=req.query.lid;
     var output={
         product:{},
