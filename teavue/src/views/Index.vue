@@ -1,6 +1,6 @@
 <template>
   <div>
-    <myheader :arr="arr"></myheader>
+    <myheader :arr="arr" :fam="fam"></myheader>
     <div id="header"></div>
     <carousel :items="items"></carousel>
     <div class="section-main">

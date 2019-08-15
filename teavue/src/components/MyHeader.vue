@@ -52,7 +52,7 @@
           <div class="nav-hand" id="nav_hand">
             <ul>
               <li class="column">
-                <a href="javascript:;" class="every">所有商品分类</a>
+                <!-- <a href="javascript:;" class="every">所有商品分类</a>
                 <ul class="nav-content-list category-content">
                   <li class="nav-content-item">
                     <a href="javascript:;">
@@ -96,7 +96,18 @@
                       <i class="icon">&gt;</i>
                     </a>
                   </li>
-                </ul>
+                </ul> -->
+                <el-dropdown>
+                      <span class="every">
+                        所有商品分类<i class="el-icon-arrow-down el-icon--right"></i>
+                      </span>
+                      <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item v-for="i in 7" :key="i" nav-content-item>
+                                  <span class="text">茶叶专区</span>
+                      <i class="icon">&gt;</i>
+                    </el-dropdown-item>
+                      </el-dropdown-menu>
+                  </el-dropdown>
               </li>
             </ul>
           </div>
