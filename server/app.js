@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const index = require("./routes/index");
 const details = require("./routes/details");
+const logo = require("./routes/logo");
 const cors = require("cors");
 
 var app = express();
@@ -24,3 +25,4 @@ app.use(express.static("public"));
 /*使用路由器来管理路由*/
 app.use("/index", index);
 app.use("/details", details);
+app.use("/logo", logo);

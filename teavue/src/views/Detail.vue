@@ -7,28 +7,16 @@
             <div class="ebtea_left">
                 <div class="e_history">
                     <div class="banner">
-                        <a href="javascript:;"><img width="155" height="155" src="images/l1.jpg" alt=""></a>
+                        <a href="javascript:;"><img width="155" height="155" :src="`http://127.0.0.1:5050/`+arr[5].img" alt=""></a>
                     </div>
                     <div class="banner">
-                        <a href="javascript:;"><img width="155" height="155" src="images/l2.jpg" alt=""></a>
+                        <a href="javascript:;"><img width="155" height="155" :src="`http://127.0.0.1:5050/`+arr[6].img" alt=""></a>
                     </div>
                     <div class="banner">
-                        <a href="javascript:;"><img width="158" height="220" src="images/l3.jpg" alt=""></a>
+                        <a href="javascript:;"><img width="158" height="220" :src="`http://127.0.0.1:5050/`+arr[7].img" alt=""></a>
                     </div>
                     <div class="banner">
-                        <a href="javascript:;"><img width="158" src="images/l4.jpg" alt=""></a>
-                    </div>
-                    <div class="banner">
-                        <a href="javascript:;"><img src="" alt=""></a>
-                    </div>
-                    <div class="banner">
-                        <a href="javascript:;"><img src="" alt=""></a>
-                    </div>
-                    <div class="banner">
-                        <a href="javascript:;"><img src="" alt=""></a>
-                    </div>
-                    <div class="banner">
-                        <a href="javascript:;"><img src="" alt=""></a>
+                        <a href="javascript:;"><img width="158" :src="`http://127.0.0.1:5050/`+arr[8].img" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -37,7 +25,7 @@
                 <!-- 顶部图片 -->
                 <div class="banner">
                     <a href="javascript:;">
-                        <img src="images/product.jpg" alt="">
+                        <img :src="`http://127.0.0.1:5050/`+arr[9].img" alt="">
                     </a>
                 </div>
                 <!-- 面包屑导航 -->
@@ -771,7 +759,26 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      results: [],
+      arr:[]
+    };
+  },
+  created() {
+    this.axios.get("http://localhost:5050/details").then(result => {
+      var results = result.data.data;
+      this.results = results;
+      console.log(this.results);
+    });
+    this.axios.get("http://localhost:5050/logo/logo").then(result => {
+      this.arr = result.data.data;
+      console.log(this.arr)
+    });
+
+  }
+};
 </script>
 <style scoped>
 body {

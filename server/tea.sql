@@ -151,7 +151,7 @@ CREATE TABLE tea_index_product(
 /**茶壶型号家族**/
 INSERT INTO tea_laptop_family VALUES
 (NULL,'金属茶具'),
-(NULL,'小陶瓷茶具'),
+(NULL,'陶瓷茶具'),
 (NULL,'茶叶专区'),
 (NULL,'电子茶具'),
 (NULL,'茶盘系列'),
@@ -361,7 +361,12 @@ INSERT INTO tea_index_logo VALUES
 (NULL, 'img/logo2.jpg','logo2'),
 (NULL, 'img/logo3.jpg','logo3'),
 (NULL, 'img/logo4.gif','logo4'),
-(NULL, 'img/logo5.gif','logo5');
+(NULL, 'img/logo5.gif','logo5'),
+(NULL, 'img/detail1.jpg','detail1'),
+(NULL, 'img/detail2.jpg','detail2'),
+(NULL, 'img/detail3.jpg','detail3'),
+(NULL, 'img/detail4.jpg','detail4'),
+(NULL, 'img/product.jpg','product');
 
 /****首页商品****/
 INSERT INTO tea_index_product VALUES

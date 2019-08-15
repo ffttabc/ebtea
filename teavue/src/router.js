@@ -7,8 +7,7 @@ import NotFound from "./views/NotFound";
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: "/",
       component: Index
     },

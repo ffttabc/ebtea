@@ -1,6 +1,6 @@
 <template>
   <div>
-    <myheader :arr="arr" :fam="fam"></myheader>
+    <myheader></myheader>
     <div id="header"></div>
     <carousel :items="items"></carousel>
     <div class="section-main">
@@ -129,7 +129,7 @@
             <a href="details.html">查看更多 ></a>
           </span>
           <div>03F</div>
-          <h2>茶叶专区 </h2>
+          <h2>茶叶专区</h2>
           <h3>不是因为茶叶多，而是我们只做品质茶</h3>
         </div>
         <div class="main_shop_cart">
@@ -169,7 +169,7 @@
                   </ins>
                   <!-- <del>
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
-                  </del> -->
+                  </del>-->
                 </div>
               </li>
             </ul>
@@ -286,7 +286,7 @@
         <div class="main_shop_h1">
           <span>
             <a href="details.html">查看更多 ></a>
-          </span>          
+          </span>
           <div>06F</div>
           <h2>玻璃茶具</h2>
           <h3>晶莹剔透，如玉之美，玻璃茶具</h3>
@@ -389,7 +389,7 @@
         </div>
       </div>
     </div>
-    <myfooter :arr="arr"></myfooter>
+    <myfooter></myfooter>
   </div>
 </template>
 <script>
@@ -398,37 +398,33 @@ export default {
     return {
       results: [],
       items: [],
-      arr:[],
-      p1:[]
+      p1: []
     };
   },
   created() {
     this.axios.get("http://localhost:5050/index").then(result => {
       var results = result.data.data;
-      this.results=results;
-      var p1=results.slice(0,6);
-      var p2=results.slice(9,15);
-      var p3=results.slice(18,24);
-      var p4=results.slice(27,33);
-      var p5=results.slice(36,42);
-      var p6=results.slice(45,51);
-      var p7=results.slice(54,60);
-      var p8=results.slice(63,69);
-      this.p1=p1;
-      this.p2=p2;
-      this.p3=p3;
-      this.p4=p4;
-      this.p5=p5;
-      this.p6=p6;
-      this.p7=p7;
-      this.p8=p8;
-      console.log(this.p1)
+      this.results = results;
+      var p1 = results.slice(0, 6);
+      var p2 = results.slice(9, 15);
+      var p3 = results.slice(18, 24);
+      var p4 = results.slice(27, 33);
+      var p5 = results.slice(36, 42);
+      var p6 = results.slice(45, 51);
+      var p7 = results.slice(54, 60);
+      var p8 = results.slice(63, 69);
+      this.p1 = p1;
+      this.p2 = p2;
+      this.p3 = p3;
+      this.p4 = p4;
+      this.p5 = p5;
+      this.p6 = p6;
+      this.p7 = p7;
+      this.p8 = p8;
+      console.log(this.p1);
     });
     this.axios.get("http://localhost:5050/index/carousel").then(result => {
-     this.items = result.data.data;
-    });
-    this.axios.get("http://localhost:5050/index/logo").then(result => {
-     this.arr = result.data.data;
+      this.items = result.data.data;
     });
   }
 };

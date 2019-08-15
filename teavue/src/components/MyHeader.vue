@@ -52,62 +52,18 @@
           <div class="nav-hand" id="nav_hand">
             <ul>
               <li class="column">
-                <!-- <a href="javascript:;" class="every">所有商品分类</a>
-                <ul class="nav-content-list category-content">
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">金属茶具</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">陶瓷茶具</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">茶盘系列</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">玻璃茶具</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">茶道配件</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">电子茶具</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                  <li class="nav-content-item">
-                    <a href="javascript:;">
-                      <span class="text">茶叶专区</span>
-                      <i class="icon">&gt;</i>
-                    </a>
-                  </li>
-                </ul> -->
                 <el-dropdown>
-                      <span class="every">
-                        所有商品分类<i class="el-icon-arrow-down el-icon--right"></i>
-                      </span>
-                      <el-dropdown-menu slot="dropdown">
-                        <el-dropdown-item v-for="i in 7" :key="i" nav-content-item>
-                                  <span class="text">茶叶专区</span>
+                  <span class="every">
+                    所有商品分类
+                    <i class="el-icon-arrow-down el-icon--right"></i>
+                  </span>
+                  <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item v-for="(item,i) of fam" :key="i" class="nav-content-item">
+                      <span class="text">{{item.fname}}</span>
                       <i class="icon">&gt;</i>
                     </el-dropdown-item>
-                      </el-dropdown-menu>
-                  </el-dropdown>
+                  </el-dropdown-menu>
+                </el-dropdown>
               </li>
             </ul>
           </div>
@@ -159,16 +115,26 @@
 export default {
   data() {
     return {
-
+      arr: [{ img: "" }],
+      fam: ""
     };
   },
-  props:{
-    arr:{
-      type:Array,
-      default:function(){
-        return [];
-      }
-    }
+  // props: {
+  //   arr: {
+  //     type: Array,
+  //     default: function() {
+  //       return [];
+  //     }
+  //   }
+  // },
+  created() {
+    this.axios.get("http://localhost:5050/logo/logo").then(result => {
+      this.arr = result.data.data;
+    });
+    this.axios.get("http://localhost:5050/logo/family").then(result => {
+      this.fam = result.data.data;
+      console.log(this.fam);
+    });
   }
 };
 </script>
@@ -288,6 +254,8 @@ img:hover {
   float: right;
   padding-top: 10px;
 }
+
+/* 下拉框 */
 #nav {
   border-bottom: 2px solid #8dda3e;
   height: 10px;
@@ -309,13 +277,13 @@ img:hover {
 #nav .nav-left .nav-hand .column {
   position: relative;
 }
-#nav .nav-left .nav-hand a.every {
+#nav .nav-left .nav-hand span.every {
   color: white;
   display: block;
+  width: 160px;
   background-color: #46ba11;
 }
-
-#nav .nav-hand .nav-content-item a {
+.el-dropdown-menu__item {
   padding-left: 20px;
   padding-right: 10px;
   padding-top: 1px;
@@ -327,8 +295,9 @@ img:hover {
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
 }
-#nav .nav-hand .nav-content-item a .text {
-  width: 123px;
+
+.el-dropdown-menu__item span {
+  width: 113px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -337,23 +306,8 @@ img:hover {
   float: left;
   font-size: 14px;
 }
-#nav .nav-hand .nav-content-item a .icon {
-  color: #aaaaaa;
-  width: 5px;
-  display: block;
-  /* vertical-align: middle; */
-  float: right;
-}
 
-#nav .nav-left .nav-hand ul li .category-content {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e0e0e0;
-  line-height: 47px;
-  width: 160px;
-  position: absolute;
-  z-index: 10;
-}
-
+/* 导航条 */
 .nav-main {
   width: 825px;
   margin-left: 0;
