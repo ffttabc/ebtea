@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="footer1" v-if="arr!==''">
+    <div class="footer1" v-if="arr.length">
       <div class="inner_wrap">
         <div>
           <div class="helper-item">
@@ -137,16 +137,16 @@
           </div>
           <div class="helper-item">
             <a href>
-              <img :src="`http://127.0.0.1:5050/`+arr[2].img" />
+              <img :src="arr.length &&`http://127.0.0.1:5050/`+arr[2].img" />
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer2">
+    <div class="footer2" v-if="arr.length">
       <div class="inner_wrap2">
         <div style="text-align: center;">
-          <img :src="`http://127.0.0.1:5050/`+arr[3].img" alt />
+          <img :src="arr.length &&`http://127.0.0.1:5050/`+arr[3].img" alt />
         </div>
         <div style="text-align: center;">
           <font
@@ -160,7 +160,7 @@
           &nbsp;|
           <span>
             <a href title="站长统计">
-              <img :src="`http://127.0.0.1:5050/`+arr[4].img" alt border="0" hspace="0" vspace="0" />
+              <img :src="arr.length && `http://127.0.0.1:5050/`+arr[4].img" alt border="0" hspace="0" vspace="0" />
             </a>
           </span>
         </div>
@@ -172,7 +172,7 @@
 export default {
   data() {
     return {
-      arr: [{ img: "" }]
+      arr: []
     };
   },
   //

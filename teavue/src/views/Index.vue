@@ -1,9 +1,8 @@
 <template>
   <div>
     <myheader></myheader>
-    <div id="header"></div>
-    <carousel :items="items"></carousel>
-    <div class="section-main">
+    <carousel :items="items" v-if="items"></carousel>
+    <div class="section-main" v-if="results!==''">
       <div class="main_item">
         <ul class="goods_list">
           <li class="goods_item" v-for="(item,i) of p1" :key="i">
@@ -17,7 +16,7 @@
           </li>
         </ul>
       </div>
-      <div class="main_shop">
+      <div class="main_shop" v-if="results">
         <div class="main_shop_h1">
           <span>
             <a href="details.html">查看更多 ></a>
@@ -396,7 +395,7 @@
 export default {
   data() {
     return {
-      results: [],
+      results: "",
       items: [],
       p1: []
     };

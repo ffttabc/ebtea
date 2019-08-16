@@ -21,7 +21,7 @@
       <div class="inner-wrap2">
         <div class="header-left">
           <a href="../index.html">
-            <img :src="`http://127.0.0.1:5050/`+arr[0].img" alt />
+            <img :src="arr.length &&`http://127.0.0.1:5050/`+arr[0].img" alt />
           </a>
         </div>
         <div class="header-main">
@@ -41,7 +41,7 @@
         </div>
         <div class="header-right">
           <a href="javascript:;" target="_blank">
-            <img :src="`http://127.0.0.1:5050/`+arr[1].img" alt />
+            <img :src="arr.length &&`http://127.0.0.1:5050/`+arr[1].img" alt />
           </a>
         </div>
       </div>
@@ -115,7 +115,7 @@
 export default {
   data() {
     return {
-      arr: [{ img: "" }],
+      arr: [],
       fam: ""
     };
   },
@@ -190,7 +190,6 @@ img:hover {
 }
 #header .inner-wrap2 {
   margin: 20px auto;
-  overflow: hidden;
 }
 .header-left {
   float: left;
@@ -258,7 +257,7 @@ img:hover {
 /* 下拉框 */
 #nav {
   border-bottom: 2px solid #8dda3e;
-  height: 10px;
+  /* height: 10px; */
 }
 .nav-left,
 .nav-main {
@@ -289,6 +288,7 @@ img:hover {
   padding-top: 1px;
   display: block;
   color: #666;
+  height:36px;
   font-weight: 400;
   overflow: hidden;
   text-align: left;
