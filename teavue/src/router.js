@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Index from "./views/Index";
-import Details from "./views/Detail";
+import Details from "./views/Details";
 import NotFound from "./views/NotFound";
 
 Vue.use(Router);

@@ -177,7 +177,7 @@ export default {
   },
   //
   created() {
-    this.axios.get("http://localhost:5050/logo/logo").then(result => {
+    this.axios.get("http://localhost:5050/logo").then(result => {
       this.arr = result.data.data;
     });
   }

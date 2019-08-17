@@ -8,6 +8,14 @@ const cors = require("cors");
 var app = express();
 app.listen(5050); //部署新浪云，硬性要求必须监听5050端口
 app.use(
+  // (req, res) => {
+  //   res.writeHead(200, {
+  //     "Content-type": "text/plain;charset=utf-8",
+  //     "Access-Control-Allow-Origin":"http://localhost:8080"
+  //   })
+  //   res.write();
+  //   res.send()
+  // }
   cors({
     origin: "http://localhost:8080"
   })

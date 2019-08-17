@@ -4,9 +4,9 @@
       <div class="inner-wrap2">
         <div class="topbar-left">
           分享优质茶具、茶叶，品味饮茶的乐趣，客服电话：400-6576-218
-          <a href="../login.html">登录</a>
+          <a href="http://127.0.0.1:5050/login.html">登录</a>
           <span>|</span>
-          <a href="../reg.html">注册</a>
+          <a href="http://127.0.0.1:5050/reg.html">注册</a>
         </div>
         <div class="topbar-right">
           <a href="javascript:;">会员中心</a>
@@ -100,7 +100,7 @@
           </ul>
         </div>
         <div class="nav-right minicart">
-          <a href="../cart.html" class="minicart-text">
+          <a href="http://127.0.0.1:5050/cart.html" class="minicart-text">
             <i class="icon"></i>
             购物车中有
             <b>0</b>
@@ -128,10 +128,11 @@ export default {
   //   }
   // },
   created() {
-    this.axios.get("http://localhost:5050/logo/logo").then(result => {
+    this.axios.get("http://localhost:5050/logo").then(result => {
       this.arr = result.data.data;
+      console.log(this.arr)
     });
-    this.axios.get("http://localhost:5050/logo/family").then(result => {
+    this.axios.get("http://localhost:5050/logo/f").then(result => {
       this.fam = result.data.data;
       console.log(this.fam);
     });

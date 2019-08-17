@@ -1,6 +1,6 @@
 (function(){
     ajax({
-        url:"http://localhost:5050/index",
+        url:"http://localhost:5050/details",
         type:"get",
         dataType:"json"
     }).then(function(result){

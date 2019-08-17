@@ -3,23 +3,21 @@
     <myheader></myheader>
     <carousel :items="items" v-if="items"></carousel>
     <div class="section-main" v-if="results!==''">
-      <div class="main_item">
+      <div class="main_item"  id="f0">
         <ul class="goods_list">
           <li class="goods_item" v-for="(item,i) of p1" :key="i">
-            <a href="details.html">
+            <router-link :to="`/details/${item.href.split('=')[1]}`">
               <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-            </a>
-            <h3 class="goods_name">
-              <a href="details.html" v-text="item.title"></a>
-            </h3>
-            <p>￥{{item.price.toFixed(2)}}</p>
+            <h3 class="goods_name">{{item.title}}</h3>
+            <p>￥{{item.price.toFixed(2)}}</p> 
+             </router-link>
           </li>
         </ul>
       </div>
-      <div class="main_shop" v-if="results">
+      <div class="main_shop" v-if="results" id="f1">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>01F</div>
           <h2>金属茶具</h2>
@@ -28,51 +26,49 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[6].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[6].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[8].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[8].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[7].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[7].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p2" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
-                <div class="goods_price">
-                  <ins>
-                    <i>￥{{item.price.toFixed(2)}}</i>
-                  </ins>
-                  <del>
-                    <i>￥{{item.market_prices.toFixed(2)}}</i>
-                  </del>
+                     <h3 class="goods_name">{{item.title}}</h3>
+                    <div class="goods_price">
+                      <ins>
+                        <i>￥{{item.price.toFixed(2)}}</i>
+                      </ins>
+                      <del>
+                        <i>￥{{item.market_prices.toFixed(2)}}</i>
+                      </del>
+                   </div>
+                  </router-link>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f2">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>02F</div>
           <h2>陶瓷茶具</h2>
@@ -81,34 +77,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[16].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[16].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[17].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[17].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[15].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[15].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p3" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -117,15 +109,17 @@
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>
                 </div>
+                  </router-link>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f3">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>03F</div>
           <h2>茶叶专区</h2>
@@ -134,34 +128,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[25].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[25].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[26].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[26].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[24].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[24].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p4" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -170,15 +160,17 @@
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>-->
                 </div>
+                  </router-link >
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f4">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>04F</div>
           <h2>电子茶具</h2>
@@ -187,34 +179,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[34].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[34].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[35].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[35].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[33].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[33].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p5" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -223,15 +211,17 @@
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>
                 </div>
+                  </router-link>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f5">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>05F</div>
           <h2>茶盘系列</h2>
@@ -240,34 +230,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[43].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[43].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[44].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[44].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[42].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[42].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p6" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -276,15 +262,17 @@
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>
                 </div>
+                  </router-link>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f6">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>06F</div>
           <h2>玻璃茶具</h2>
@@ -293,34 +281,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[52].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[52].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[53].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[53].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[51].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[51].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p7" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -329,15 +313,17 @@
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>
                 </div>
+                  </router-link>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main_shop">
+      <div class="main_shop"  id="f7">
         <div class="main_shop_h1">
           <span>
-            <a href="details.html">查看更多 ></a>
+            <a href="javascript:;">查看更多 ></a>
           </span>
           <div>07F</div>
           <h2>茶道配件</h2>
@@ -346,34 +332,30 @@
         <div class="main_shop_cart">
           <div class="left">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[61].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[61].pic" alt />
-              </a>
+              </router-link>
             </div>
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[62].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[62].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="center">
             <div class="banner">
-              <a href="details.html">
+              <router-link :to="`/details/${results[60].href.split('=')[1]}`">
                 <img :src="`http://127.0.0.1:5050/`+results[60].pic" alt />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="right">
             <ul class="goods_list">
               <li class="goods_item" v-for="(item,i) of p8" :key="i">
                 <div class="goods_pic">
-                  <a href="details.html">
+                  <router-link :to="`/details/${item.href.split('=')[1]}`">
                     <img :src="`http://127.0.0.1:5050/`+item.pic" alt />
-                  </a>
-                </div>
-                <h3 class="goods_name">
-                  <a href="details.html">{{item.title}}</a>
-                </h3>
+                <h3 class="goods_name">{{item.title}}</h3>
                 <div class="goods_price">
                   <ins>
                     <i>￥{{item.price.toFixed(2)}}</i>
@@ -381,6 +363,8 @@
                   <del>
                     <i>￥{{item.market_prices.toFixed(2)}}</i>
                   </del>
+                </div>
+                  </router-link>
                 </div>
               </li>
             </ul>
@@ -397,7 +381,14 @@ export default {
     return {
       results: "",
       items: [],
-      p1: []
+      p1: [],
+      p2: [],
+      p3: [],
+      p4: [],
+      p5: [],
+      p6: [],
+      p7: [],
+      p8: [],
     };
   },
   created() {
@@ -420,7 +411,7 @@ export default {
       this.p6 = p6;
       this.p7 = p7;
       this.p8 = p8;
-      console.log(this.p1);
+      console.log(this.results);
     });
     this.axios.get("http://localhost:5050/index/carousel").then(result => {
       this.items = result.data.data;

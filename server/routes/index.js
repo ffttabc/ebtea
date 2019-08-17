@@ -5,7 +5,7 @@ const pool = require("../pool");
 router.get("/", (req, res) => {
         console.log("收到请求data1")
         // res.send("。。。。。")
-        var sql = "SELECT title,pic,price,market_prices FROM tea_index_product";
+        var sql = "SELECT title,pic,price,market_prices,href FROM tea_index_product";
         pool.query(sql, [], (err, result) => {
             if (err) throw err;
             res.send({
