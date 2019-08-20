@@ -6,6 +6,52 @@
         <!-- left-aside -->
         <div class="ebtea_left">
           <div class="e_history">
+            <div>
+								<ul class="nav-content-list category-content">
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">金属茶具</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">陶瓷茶具</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">茶盘系列</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">玻璃茶具</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">茶道配件</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">电子茶具</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+										<li class="nav-content-item">
+											<a href="javascript:;">
+												<span class="text">茶叶专区</span>
+												<i class="icon">&gt;</i>
+											</a>
+										</li>
+									</ul>
+            </div>
             <div class="banner">
               <a href="javascript:;">
                 <img width="155" height="155" :src="arr.length &&`http://127.0.0.1:5050/`+arr[5].img" alt />
@@ -164,11 +210,7 @@
                   <ul>
                     <li class="product-buy-quantity">
                       <span>数量：</span>
-                      <span>
-                        <a href="javascript:;">-</a>
-                        <input type="text" value="1" />
-                        <a href="javascript:;">+</a>
-                      </span>
+                        <el-input-number v-model="num" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                       <span>件</span>
                     </li>
                     <li class="product-buy-action">
@@ -183,28 +225,9 @@
                 </div>
               </div>
             </div>
-            <div class="product-tags clearfix">
-              <h2 class="tags-hd tab1 active">
-                <a href="javascript:;">商品详情</a>
-              </h2>
-              <h2 class="tags-hd tab2">
-                <a href="javascript:;">商品评论</a>
-              </h2>
-              <h2 class="tags-hd tab3">
-                <a href="javascript:;">商品咨询</a>
-              </h2>
-              <h2 class="tags-hd tab4">
-                <a href="javascript:;">销售记录</a>
-              </h2>
-              <h2 class="tags-hd tab5">
-                <a href="javascript:;">售后服务</a>
-              </h2>
-              <h2 class="tags-hd tab6">
-                <a href="javascript:;">运输帮助</a>
-              </h2>
-            </div>
-            <div id="product_section">
-              <div id="product_detail" class="tab-content tab1 active">
+            <el-tabs v-model="activeName" type="card" @tab-click="handleClick" class="product-tags clearfix">
+              <el-tab-pane label="商品详情" name="first">
+                <div id="product_detail" class="tab-content tab1 active">
                 <div class="product-section product-detail">
                   <div class="product-attributes">
                     <ul class="clearfix">
@@ -232,17 +255,17 @@
                 <div class="detail-content">
                   <div>
                     <div>
-                      <img height="70" src="images/commodity.jpg" width="740" />
+                      <img height="70" src="../assets/commodity.jpg" width="740" />
                     </div>
                     <div>
-                      <img src="images/T2.jpg" alt />
-                      <img src="images/T3.jpg" alt />
+                      <img src="../assets/T2.jpg" alt />
+                      <img src="../assets/T3.jpg" alt />
                       <p>紫砂材料透气性优良，具有泡茶不易走味，茶叶不易变质的优点，让茶汤更加香醇美味。</p>
                     </div>
                   </div>
                   <div>
                     <div>
-                      <img height="70" src="images/commodity2.jpg" width="740" />
+                      <img height="70" src="../assets/commodity2.jpg" width="740" />
                     </div>
                     <div style="text-align: center;margin-top: 10px;margin-bottom: 20px;">
                       <table
@@ -256,7 +279,7 @@
                         <tbody>
                           <tr>
                             <td colspan="4" height="60" style="text-align: left;">
-                              <img height="500" src="images/T4.jpg" width="750" />
+                              <img height="500" src="../assets/T4.jpg" width="750" />
                             </td>
                           </tr>
                           <tr>
@@ -386,59 +409,59 @@
                           </tr>
                         </tbody>
                       </table>
-                      <img src="images/T5.jpg" alt />
+                      <img src="../assets/T5.jpg" alt />
                     </div>
                     <div style="text-align: center;margin-top: 10.0px;margin-bottom: 20.0px;">
-                      <img height="70" src="images/commodity2.jpg" width="740" />
+                      <img height="70" src="../assets/commodity2.jpg" width="740" />
                     </div>
                     <div>
-                      <img src="images/T6.jpg" alt />
+                      <img src="../assets/T6.jpg" alt />
                       <p>此杯茶香色浓,即使酷暑亦可保持数日不变味,长期使用,不仅不会出现磨损和划痕,相反会因为吸收了茶汤中的茶油而变得光润似玉,杯身刻画精美，做工细腻，让人爱不释手,</p>
-                      <img src="images/T7.jpg" alt />
+                      <img src="../assets/T7.jpg" alt />
                       <p>紫砂杯使用越久，茶具身色泽越发光亮照人，气韵温雅。紫砂杯长久使用，器身会因抚摸擦拭，变得越发光润可爱。</p>
-                      <img src="images/T8.jpg" alt />
+                      <img src="../assets/T8.jpg" alt />
                       <p>养杯时都是小心翼翼，以保持杯的完整性，当与紫砂杯有了深厚感情，品茗过程也会平添无限乐趣。</p>
                     </div>
                   </div>
                   <div style="margin-bottom:27.6px;">
                     <div>
-                      <img height="70" src="images/commodity3.jpg" width="740" />
+                      <img height="70" src="../assets/commodity3.jpg" width="740" />
                     </div>
                     <div>
-                      <img src="images/T9.jpg" alt />
-                      <img src="images/T10.jpg" alt />
-                      <img src="images/T11.jpg" alt />
-                      <img src="images/T12.jpg" alt />
+                      <img src="../assets/T9.jpg" alt />
+                      <img src="../assets/T10.jpg" alt />
+                      <img src="../assets/T11.jpg" alt />
+                      <img src="../assets/T12.jpg" alt />
                     </div>
                   </div>
                   <div style="margin-bottom:10px;">
                     <div>
-                      <img height="70" src="images/commodity4.jpg" width="740" />
+                      <img height="70" src="../assets/commodity4.jpg" width="740" />
                     </div>
                     <div
                       style="border-left: #d6d6d6 1.0px solid;padding-bottom: 8.0px;padding-left: 25.0px;padding-right: 5.0px;border-right: #d6d6d6 1.0px solid;padding-top: 8.0px;"
                     >
-                      <img src="images/T13.jpg" alt />
+                      <img src="../assets/T13.jpg" alt />
                     </div>
                   </div>
                   <div style="margin-bottom:10px;">
                     <div>
-                      <img height="70" src="images/commodity5.jpg" width="740" />
+                      <img height="70" src="../assets/commodity5.jpg" width="740" />
                     </div>
                     <div
                       style="border-left: #d6d6d6 1.0px solid;padding-bottom: 8.0px;padding-left: 25.0px;padding-right: 5.0px;border-right: #d6d6d6 1.0px solid;padding-top: 8.0px;"
                     >
-                      <img src="images/T14.jpg" alt />
+                      <img src="../assets/T14.jpg" alt />
                     </div>
                   </div>
                   <div style="margin-bottom:10px;">
                     <div>
-                      <img height="70" src="images/commodity6.jpg" width="740" />
+                      <img height="70" src="../assets/commodity6.jpg" width="740" />
                     </div>
                     <div
                       style="border-left: #d6d6d6 1.0px solid;padding-bottom: 8.0px;padding-left: 25.0px;padding-right: 5.0px;border-right: #d6d6d6 1.0px solid;padding-top: 8.0px;"
                     >
-                      <img src="images/T15.jpg" alt />
+                      <img src="../assets/T15.jpg" alt />
                     </div>
                   </div>
                 </div>
@@ -604,7 +627,9 @@
                   </div>
                 </div>
               </div>
-              <div id="product_comment" class="tab-content tab2">
+              </el-tab-pane>
+              <el-tab-pane label="商品评论" name="second">
+                <div id="product_detail" class="tab-content tab2">
                 <div class="product-comment">
                   <div class="mod-title mod">
                     <h2>商品评论</h2>
@@ -731,8 +756,45 @@
                     </div>
                   </div>
                 </div>
+                <div class="product-consult">
+                  <div class="mod-title mod">
+                    <h2>商品咨询</h2>
+                  </div>
+                  <div class="consult-title">
+                    <a href></a>
+                    <button class="btn">
+                      <span>我要咨询</span>
+                    </button>
+                    <em>
+                      请
+                      <a href="javascript:;">登录</a>后再咨询,如果您不是会员请
+                      <a href="javascript:;">注册</a>!
+                    </em>
+                  </div>
+                  <div class="consult-content">
+                    <ul class="tabs clearfix switchable-triggerBox">
+                      <li>
+                        <a href="javascript:;">全部咨询(0)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">商品咨询(0)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">配送咨询(0)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">售后咨询(0)</a>
+                      </li>
+                    </ul>
+                    <div>
+                      <div class="no-message">如果您对本商品有什么问题,请提问咨询!</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div id="product_consult" class="tab-content tab3">
+              </el-tab-pane>
+              <el-tab-pane label="商品咨询" name="third">
+                <div id="product_consult" class="tab-content tab3">
                 <div class="product-consult">
                   <div class="mod-title mod">
                     <h2>商品咨询</h2>
@@ -850,7 +912,9 @@
                   </div>
                 </div>
               </div>
-              <div id="product_saleslog" class="tab-content tab4">
+              </el-tab-pane>
+              <el-tab-pane label="销售记录" name="fourth">
+                <div id="product_saleslog" class="tab-content tab4">
                 <table class="saleslog">
                   <thead>
                     <tr>
@@ -883,12 +947,16 @@
                 </table>
                 <div class="p5">截至今日， 累计销售3件</div>
               </div>
-              <div id="product_shfw" class="tab-content tab5">
+              </el-tab-pane>
+              <el-tab-pane label="售后服务" name="five">
+                 <div id="product_shfw" class="tab-content tab5">
                 <div style="text-align:center; padding:15px; border:1px solid #ccc;">
                   <img alt="售后服务" src="images/T14.jpg" />
                 </div>
               </div>
-              <div id="product_ysbz" class="tab-content tab6">
+              </el-tab-pane>
+              <el-tab-pane label="运输帮助" name="six">
+                <div id="product_ysbz" class="tab-content tab6">
                 <div style="line-height:180%; padding:15px; border:1px solid #ccc;">
                   我们采用多种配送方式：
                   <br />1、快递运输，支持国内主流的快递如圆通、申通、韵达、顺丰、德邦。
@@ -902,7 +970,8 @@
                   the actual settlement
                 </div>
               </div>
-            </div>
+              </el-tab-pane>
+            </el-tabs>
           </div>
         </div>
       </div>
@@ -920,7 +989,8 @@ export default {
       arr1:[],
       Arr:{},
       sm:"",
-      money:""
+      money:"",
+      num: 1
     };
   },
   props: ["lid"],
@@ -955,7 +1025,12 @@ export default {
       }
     //   console.log(this.arr1);
     });
-  }
+  },
+  methods: {
+      handleChange(value) {
+        console.log(value);
+      }
+    }
 };
 </script>
 <style scoped>

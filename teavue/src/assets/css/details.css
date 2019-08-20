@@ -38,7 +38,11 @@ input, select, button {
 .tab-content  {
     display: none;
   }
- #product_section .active {
+ /* #product_section .active {
+    display: block;
+    width:100%;
+  } */
+  .tab-content{
     display: block;
     width:100%;
   }
@@ -94,9 +98,46 @@ input, select, button {
     width: 160px;
     float: left;
     overflow: hidden;
-    padding-top: 335px;
+    /* padding-top: 335px; */
+}
+ .nav-content-item a{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top:1px;
+    display: block;
+    color: #666;
+    font-weight: 400;
+    overflow: hidden;
+    text-align: left;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.nav-content-item a .text{
+    width: 123px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    /* vertical-align: middle; */
+    float: left;
+    font-size:14px;
+}
+ .nav-content-item a .icon{
+    color: #aaaaaa;
+    width: 5px;
+    display: block;
+    /* vertical-align: middle; */
+    float: right;
 }
 
+.nav-hand ul li .category-content{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 47px;
+    width: 160px;
+    position: absolute;
+    z-index: 10;
+  }
 .e_history {
     width: 158px;
     border: 1px solid #e0e0e0;
