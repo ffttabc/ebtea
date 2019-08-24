@@ -11,6 +11,7 @@ a {
     color: #666;
     text-decoration: none;
 }
+
 ul,
 ol,
 menu {
@@ -23,29 +24,42 @@ i,
 em {
     font-style: normal;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
     border-width: 1px;
     border-color: #ccc;
     padding: 1px;
 }
-input, select, button, textarea {
+
+input,
+select,
+button,
+textarea {
     font-size: 100%;
     font-family: inherit;
 }
-input, select, button {
+
+input,
+select,
+button {
     vertical-align: middle;
 }
-.tab-content  {
+
+.tab-content {
     display: none;
-  }
- /* #product_section .active {
+}
+
+/* #product_section .active {
     display: block;
     width:100%;
   } */
-  .tab-content{
+.tab-content {
     display: block;
-    width:100%;
-  }
+    width: 100%;
+}
+
 .mod-bottom,
 .product-comment,
 .form-item,
@@ -88,6 +102,7 @@ input, select, button {
     width: 1226px;
     margin: 0 auto;
 }
+
 .container .ebtea_main::after {
     content: "";
     display: block;
@@ -100,10 +115,11 @@ input, select, button {
     overflow: hidden;
     /* padding-top: 335px; */
 }
- .nav-content-item a{
+
+.nav-content-item a {
     padding-left: 20px;
     padding-right: 10px;
-    padding-top:1px;
+    padding-top: 1px;
     display: block;
     color: #666;
     font-weight: 400;
@@ -112,7 +128,8 @@ input, select, button {
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
 }
-.nav-content-item a .text{
+
+.nav-content-item a .text {
     width: 123px;
     white-space: nowrap;
     overflow: hidden;
@@ -120,9 +137,10 @@ input, select, button {
     display: block;
     /* vertical-align: middle; */
     float: left;
-    font-size:14px;
+    font-size: 14px;
 }
- .nav-content-item a .icon{
+
+.nav-content-item a .icon {
     color: #aaaaaa;
     width: 5px;
     display: block;
@@ -130,14 +148,15 @@ input, select, button {
     float: right;
 }
 
-.nav-hand ul li .category-content{
+.nav-hand ul li .category-content {
     background-color: #f9f9f9;
     border-bottom: 1px solid #e0e0e0;
     line-height: 47px;
     width: 160px;
     position: absolute;
     z-index: 10;
-  }
+}
+
 .e_history {
     width: 158px;
     border: 1px solid #e0e0e0;
@@ -403,8 +422,28 @@ input, select, button {
 
 .product-buy-quantity span:first-child {
     display: inline-block;
-    text-align: right;
+    text-align: center;
     margin-right: 3.6px;
+}
+
+.el-input-number {
+    position: relative;
+    display: inline-block;
+    width: 114px !important;
+    line-height: 38px;
+}
+
+.el-input-number .el-input__inner {
+    -webkit-appearance: none;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: center;
+}
+
+.product-buy-quantity span {
+    display: inline-block;
+    width: 38px !important;
+    height: 38px !important;
 }
 
 .product-buy-quantity span input {
@@ -807,28 +846,33 @@ input, select, button {
 .answer-content {
     margin-top: 5px;
 }
+
 .product-consult {
     line-height: 24px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
 }
+
 .consult-title {
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
-.consult-title button{
+
+.consult-title button {
     margin: 0;
     white-space: nowrap;
     cursor: pointer;
-    
+
 }
-.consult-title .btn{
+
+.consult-title .btn {
     font-size: 100%;
     font-family: inherit;
     border: 0 none;
     padding: 0;
     vertical-align: middle;
 }
-.consult-title .btn span{
+
+.consult-title .btn span {
     border: 1px solid #ccc;
     background-color: #fff;
     display: inline-block;
@@ -837,40 +881,51 @@ input, select, button {
     font-size: inherit;
     padding-left: 10px;
     padding-right: 10px;
-    background-image: linear-gradient(#fefefe,#f3f3f3)
+    background-image: linear-gradient(#fefefe, #f3f3f3)
 }
+
 .consult-title em {
     margin-left: 15px;
 }
+
 .consult-content {
     padding: 10px 20px;
 }
+
 .consult-content .tabs {
     margin-top: 10px;
 }
+
 .consult-content .tabs li {
     float: left;
     margin-right: 5px;
 }
+
 .consult-content .tabs a {
     display: block;
     padding: 0 10px;
 }
-.consult-content .tabs li:first-child a, .consult-content .tabs a:hover {
+
+.consult-content .tabs li:first-child a,
+.consult-content .tabs a:hover {
     background-color: #a4a4a4;
     color: #fff;
 }
+
 .consult-content .no-message {
     margin-top: 20px;
 }
+
 .post-comment {
     line-height: 24px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
 }
+
 .mod-title {
     background-color: #efefef;
     height: 32px;
 }
+
 .mod-title h2 {
     line-height: 32px;
     font-weight: 400;
@@ -878,12 +933,15 @@ input, select, button {
     padding-left: 10px;
     font-size: 116.66667%;
 }
+
 .post-comment .mod-content {
     padding: 20px;
 }
+
 .form-item {
     overflow: hidden;
 }
+
 .form-label {
     text-align: right;
     float: left;
@@ -891,42 +949,56 @@ input, select, button {
     line-height: 2.1rem;
     min-height: 1rem;
 }
+
 .form-act {
     display: block;
     margin-left: 5.45rem;
 }
-input[type=checkbox], input[type=radio] {
+
+input[type=checkbox],
+input[type=radio] {
     height: 13px;
 }
+
 input {
     line-height: 21px;
     height: 21px;
 }
+
 .form-act label {
     margin-left: 5px;
     margin-right: 15px;
     line-height: 2.1rem;
-    min-height: 1rem;   
+    min-height: 1rem;
 }
+
 .no-permission {
     position: relative;
 }
+
 .form-act-side {
     margin-right: 190px;
 }
+
 textarea {
     border-style: solid;
 }
-.form-act textarea, .form-act-wide textarea, .form-act-side textarea {
+
+.form-act textarea,
+.form-act-wide textarea,
+.form-act-side textarea {
     -webkit-resize: vertical;
     -moz-resize: vertical;
     resize: vertical;
     width: 99%;
     display: block;
 }
-.no-permission textarea, .no-permission input {
+
+.no-permission textarea,
+.no-permission input {
     background-color: #efefef;
 }
+
 .mini-mask {
     position: absolute;
     z-index: 10;
@@ -940,6 +1012,7 @@ textarea {
     color: #000;
     line-height: 11em;
 }
+
 .post-comment .word-count {
     float: right;
     color: #666;
@@ -947,12 +1020,15 @@ textarea {
     margin-right: 5px;
     line-height: 25px;
 }
-input[type=text]{
+
+input[type=text] {
     border-style: solid;
 }
+
 .post-comment .sub-label {
     color: #666;
 }
+
 .btn {
     border: 0 none;
     background-color: transparent;
@@ -966,12 +1042,13 @@ input[type=text]{
     font-size: inherit;
 }
 
- .form-act button {
+.form-act button {
     margin: 0;
     cursor: pointer;
-    background-image: linear-gradient(#9c9c9c,#8e8e8e);
+    background-image: linear-gradient(#9c9c9c, #8e8e8e);
     color: #ddd;
 }
+
 .saleslog {
     width: 100%;
 }
@@ -980,22 +1057,32 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 .saleslog thead th {
     border-bottom: 2px solid #ccc;
 }
 
-.saleslog th, .saleslog td {
+.saleslog th,
+.saleslog td {
     height: 30px;
     text-align: center;
 }
+
 .saleslog tbody tr {
     border-bottom: 1px dotted #ccc;
 }
+
 .p5 {
     padding: 5px;
 }
-#product_detail,#product_comment,#product_consult,#product_saleslog,#product_shfw,#product_ysbz{
+
+#product_detail,
+#product_comment,
+#product_consult,
+#product_saleslog,
+#product_shfw,
+#product_ysbz {
     position: relative;
-    top:0;
-    left:0;
-} 
+    top: 0;
+    left: 0;
+}
