@@ -373,7 +373,7 @@ button {
 .product-information {
     line-height: 2;
     width: 100%;
-    height: 74px;
+    height: 133px;
     border-bottom: 1px dotted #ddd;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -429,7 +429,7 @@ button {
 .el-input-number {
     position: relative;
     display: inline-block;
-    width: 114px !important;
+    width: 160px !important;
     line-height: 38px;
 }
 
@@ -442,8 +442,9 @@ button {
 
 .product-buy-quantity span {
     display: inline-block;
-    width: 38px !important;
+    width: 50px !important;
     height: 38px !important;
+    margin:0 5px;
 }
 
 .product-buy-quantity span input {

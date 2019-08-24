@@ -247,13 +247,14 @@
               </div>
             </div>
             <el-tabs
-              v-model="activeName"
+              v-model="activeName2"
               type="card"
               @tab-click="handleClick"
-              class="product-tags clearfix"
+              class="product-tags clearfix" 
+              style="text-align:left"
             >
               <el-tab-pane label="商品详情" name="first">
-                <div id="product_detail" class="tab-content tab1 active">
+                <div id="product_detail" class="tab-content tab1">
                   <div class="product-section product-detail">
                     <div class="product-attributes">
                       <ul class="clearfix">
@@ -1016,7 +1017,8 @@ export default {
       Arr: {},
       sm: "",
       money: "",
-      num: 1
+      num: 1,
+      activeName2: 'first'
     };
   },
   props: ["lid"],
@@ -1053,9 +1055,12 @@ export default {
     });
   },
   methods: {
-    handleChange(value) {
-      console.log(value);
-    }
+    handleChange() {
+      console.log(this.num);
+    },
+    handleClick(tab, event) {
+        console.log(tab, event);
+      }
   }
 };
 </script>
