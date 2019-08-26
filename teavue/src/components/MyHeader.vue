@@ -130,7 +130,7 @@ export default {
   created() {
     this.axios.get("http://localhost:5050/logo").then(result => {
       this.arr = result.data.data;
-      console.log(this.arr)
+      console.log(this.arr);
     });
     this.axios.get("http://localhost:5050/logo/f").then(result => {
       this.fam = result.data.data;
@@ -247,8 +247,10 @@ img:hover {
 .header-main .hots {
   line-height: 25px;
   color: #666666;
+  text-align: left;
   position: relative;
   top: -1px;
+  left: 22px;
 }
 .header-right {
   float: right;
@@ -289,7 +291,7 @@ img:hover {
   padding-top: 1px;
   display: block;
   color: #666;
-  height:36px;
+  height: 36px;
   font-weight: 400;
   overflow: hidden;
   text-align: left;

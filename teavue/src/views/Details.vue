@@ -133,38 +133,10 @@
                     </div>
                     <div class="thumbnail-list">
                       <ul>
-                        <li class="active">
+                          <li class="active" v-for="i in 10" :key="i">
                           <div class="thumbnail">
                             <a href="javascript:;">
-                              <img :src="`http://127.0.0.1:5050/`+results1[0].sm" alt />
-                            </a>
-                          </div>
-                        </li>
-                        <li class>
-                          <div class="thumbnail">
-                            <a href="javascript:;">
-                              <img :src="`http://127.0.0.1:5050/`+results1[0].sm" alt />
-                            </a>
-                          </div>
-                        </li>
-                        <li class>
-                          <div class="thumbnail">
-                            <a href="javascript:;">
-                              <img :src="`http://127.0.0.1:5050/`+results1[0].sm" alt />
-                            </a>
-                          </div>
-                        </li>
-                        <li class>
-                          <div class="thumbnail">
-                            <a href="javascript:;">
-                              <img :src="`http://127.0.0.1:5050/`+results1[0].sm" alt />
-                            </a>
-                          </div>
-                        </li>
-                        <li class>
-                          <div class="thumbnail">
-                            <a href="javascript:;">
-                              <img :src="`http://127.0.0.1:5050/`+results1[0].sm" alt />
+                              <img :src="'http://ebtea.applinzi.com/'+results1[0].sm" alt />
                             </a>
                           </div>
                         </li>
@@ -224,7 +196,7 @@
                 <div class="product-buy">
                   <ul>
                     <li class="product-buy-quantity">
-                      <span>数量：</span>
+                      <div>数量：</div>
                       <el-input-number
                         v-model="num"
                         @change="handleChange"
@@ -232,7 +204,7 @@
                         :max="10"
                         label="描述文字"
                       ></el-input-number>
-                      <span>件</span>
+                      <div>件</div>
                     </li>
                     <li class="product-buy-action">
                       <a href="login.html" class="btn">立即购买</a>

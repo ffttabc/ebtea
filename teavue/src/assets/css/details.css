@@ -209,7 +209,7 @@ button {
     position: absolute;
     top: 0;
     margin-top: 5px;
-    width: 16px;
+    width: 28px;
     background-color: #eee;
     height: 64px;
     line-height: 64px;
@@ -229,7 +229,7 @@ button {
     cursor: pointer;
     position: absolute;
     top: 25px;
-    right: 5px;
+    right: 12px;
 }
 
 .bottom .thumbnail-list {
@@ -241,16 +241,16 @@ button {
 }
 
 .product-side .product-album .bottom ul {
-    width: 360px;
+    width: 720px;
     height: 69px;
     position: absolute;
     top: 0;
     left: 16px;
+    padding-left: 31px;
 }
 
 .product-side .product-album .bottom ul li {
     padding: 1px;
-    margin: 0 4px;
     float: left;
 }
 
@@ -279,7 +279,7 @@ button {
     top: 0;
     right: 0;
     margin-top: 5px;
-    width: 16px;
+    width: 28px;
     background-color: #eee;
     height: 64px;
     line-height: 64px;
@@ -299,7 +299,7 @@ button {
     cursor: pointer;
     position: absolute;
     top: 25px;
-    left: 5px;
+    left: 12px;
 }
 
 .share-recommend {
@@ -377,6 +377,7 @@ button {
     border-bottom: 1px dotted #ddd;
     padding-bottom: 5px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .product-information .action-price {
@@ -392,6 +393,7 @@ button {
 .product-params {
     width: 626px;
     height: 18px;
+    text-align: left;
 }
 
 .product-params span {
@@ -408,29 +410,33 @@ button {
     border: 1px solid #ffe6ca;
     padding: 10px 15px;
     margin-top: 10px;
+    text-align: left;
 }
 
 .product-buy-quantity {
     margin-bottom: 20px;
 }
-
+.product-buy-quantity div{
+    display: inline-block;
+    margin-right: 3.6px;
+}
 .product-buy-quantity span {
     display: inline-block;
     width: 72px;
-    height: 24px;
+    height: 22px;
 }
 
-.product-buy-quantity span:first-child {
+/* .product-buy-quantity div:first-child {
     display: inline-block;
     text-align: center;
     margin-right: 3.6px;
-}
+} */
 
 .el-input-number {
     position: relative;
     display: inline-block;
-    width: 160px !important;
-    line-height: 38px;
+    width: 72px !important;
+    line-height: 23px !important;
 }
 
 .el-input-number .el-input__inner {
@@ -438,13 +444,14 @@ button {
     padding-left: 20px !important;
     padding-right: 20px !important;
     text-align: center;
+    height: 24px;
+    line-height: 24px;
 }
 
 .product-buy-quantity span {
     display: inline-block;
-    width: 50px !important;
-    height: 38px !important;
-    margin:0 5px;
+    width: 22px !important;
+    height: 22px !important;
 }
 
 .product-buy-quantity span input {
